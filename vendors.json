@@ -1154,7 +1154,13 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": true,
+    "capability_assessment": {
+      "status": "verified",
+      "verified_date": "2026-06",
+      "all_false_by_design": true,
+      "rationale": "CONFSEC is a confidential / provably-private AI inference layer (an enterprise build of Apple's Private Cloud Compute) \u2014 prompts and metadata stay unseen and unstored at inference via OHTTP, blind signatures, remote attestation, TEEs/TPMs, and transparency logs. This is data-in-use privacy at inference time and maps to none of the 10 current capability dimensions. Closest adjacency is dspm_ai_data_sec, but DSPM covers data discovery and classification at rest \u2014 a different problem \u2014 so it stays false. Candidate trigger for an 11th dimension (confidential_inference) if more TEE-attestation inference vendors emerge."
+    }
   },
   {
     "name": "Harmonic Security",
