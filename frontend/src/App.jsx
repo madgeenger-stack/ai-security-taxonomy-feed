@@ -59,6 +59,15 @@ function Section({ cat, items, count }) {
                 ))}
                 <div className="lb-ncell">{n}</div>
                 {v.notes && <div className="lb-notes">※ {v.notes}</div>}
+                {v.capability_assessment && (
+                  <div className="lb-assess">
+                    <span className="lb-assess-mk">†</span>
+                    {v.capability_assessment.all_false_by_design && (
+                      <span className="lb-assess-tag">all-false by design</span>
+                    )}
+                    <span className="lb-assess-tx">{v.capability_assessment.rationale}</span>
+                  </div>
+                )}
               </Fragment>
             );
           })}
@@ -262,6 +271,15 @@ const CSS = `
   border-left:2px solid var(--ink)}
 .lb-notes{grid-column:1/-1;font-family:var(--serif);font-style:italic;font-size:11px;
   color:var(--graph);padding:7px 0 9px 2px;border-bottom:1px solid var(--rule);line-height:1.45}
+
+.lb-assess{grid-column:1/-1;font-family:var(--serif);font-size:11px;color:var(--ink);
+  background:rgba(95,125,146,.07);border-left:2px solid var(--blue);
+  border-bottom:1px solid var(--rule);padding:8px 12px 9px;line-height:1.5}
+.lb-assess-mk{font-family:var(--serif);color:var(--blue);font-weight:700;margin-right:7px}
+.lb-assess-tag{font-family:var(--tw);font-size:8px;letter-spacing:.5px;text-transform:uppercase;
+  color:var(--blue);border:1px solid var(--blue);border-radius:2px;padding:1px 5px;
+  margin-right:7px;white-space:nowrap}
+.lb-assess-tx{font-style:italic;color:var(--ink)}
 
 .lb-foot{max-width:1120px;font-family:var(--tw);font-size:10px;color:var(--graph);
   letter-spacing:.4px;margin-top:30px;padding-top:14px;border-top:1px solid var(--rule)}
