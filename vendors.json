@@ -466,7 +466,7 @@
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "funding_stage": "Unknown",
     "key_capability": "Shadow AI discovery, AI agent inventory and governance, MCP server connection detection",
-    "notes": "2026-05/06: Launched browser-based shadow AI agent discovery beyond API-level visibility. Capability targets agentic AI governance programs, enabling auditable inventory of agents including those created without IT knowledge. Per PR Newswire press release 2026-05-28.",
+    "notes": "Launched browser-based shadow AI agent discovery 2026-05-28, per PR Newswire. Capability discovers agents created outside IT visibility, builds auditable agent inventory, and identifies risks such as publicly exposed agents. Extends prior shadow AI discovery to agentic governance layer.",
     "status": "UPDATED",
     "last_updated": "2026-06",
     "verification_needed": false,
