@@ -46,6 +46,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "Cisco AI Defense",
+    "category": "AI Firewall / LLM Gateway",
+    "hq": "San Jose, CA",
+    "funding_stage": "Public (CSCO)",
+    "key_capability": "Runtime AI protection and validation \u2014 model/application guardrails and prompt-injection defense at the gateway, with algorithmic red teaming carried over from Robust Intelligence",
+    "notes": "Cisco's AI security product. Announced 15 Jan 2025; reached general availability in\nMarch 2025. Robust Intelligence (acquired Aug 2024; see robust-intelligence.yml) folded\ninto Cisco AI Defense as its validation / algorithmic red-teaming engine. A Feb 2026\nexpansion added agent and AI-supply-chain protection.\n\nRecorded at the PRODUCT level as \"Cisco AI Defense\" (not \"Cisco\") to avoid an\nover-broad platform row. \"Cisco\" should be added as an alias in vendor-aliases.yml so\nthe sweep stops re-surfacing it as an unclassified orphan.\n\nOPEN CALL \u2014 primary capability: chose llm_firewall (runtime gateway/guardrails), with\nprompt_injection_defense and ai_red_teaming also marked true. Category mirrors\nRobust Intelligence (AI Firewall / LLM Gateway) rather than Platform & Ecosystem Plays,\nper the product-level framing. Flagged in PR.\n",
+    "status": "NEW",
+    "last_updated": "2026-06",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": true,
+      "prompt_injection_defense": true,
+      "agentic_security": false,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": true,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "F5 AI Gateway",
     "category": "AI Firewall / LLM Gateway",
     "hq": "Seattle, WA",
@@ -671,6 +695,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "Drata",
+    "category": "Agentic AI Security",
+    "hq": "San Diego, CA",
+    "funding_stage": "Series C $200M",
+    "key_capability": "AI Agent Governance (early access) \u2014 shadow AI-agent discovery, agent inventory and authorization, inline policy enforcement that blocks before execution, drift monitoring, and a tamper-evident audit trail",
+    "notes": "AI Agent Governance is EARLY ACCESS (launched 10 Jun 2026) \u2014 NOT GA. Drata's inline\nsensors discover every agent in the environment (including shadow AI agents), build a\nfull inventory mapping each to owner, identity, permissions and scope, evaluate every\naction against policy in real time, block violations inline before execution, flag\ndrift, and log each decision to a tamper-evident record. Maps to OWASP, ISO 42001 and\nthe EU AI Act. Extends Drata's Trust Management Platform (compliance/GRC), which serves\n8,500+ organizations. Series C $200M (Dec 2022, ICONIQ Growth + GGV Capital), $2B\nvaluation; total funding ~$328M.\n\nOPEN CALL \u2014 canonical name recorded as \"Drata\"; confirm this matches what the sweep\nemits or it will re-propose an orphan next run. Category is a judgment call: placed in\nAgentic AI Security because the product governs AI agents (discovery, inventory,\nauthorization, inline enforcement); AI Security Posture Mgmt (AI-SPM) is the\nalternative. Flagged in PR. agentic_security marked true on the strength of inline\nauthorization/enforcement on agent execution \u2014 confirm during verification.\n",
+    "status": "NEW",
+    "last_updated": "2026-06",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "General Analysis",
     "category": "Agentic AI Security",
     "hq": null,
@@ -741,6 +789,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "Offroad",
+    "category": "Agentic AI Security",
+    "hq": "New York, NY / Tel Aviv, Israel",
+    "funding_stage": "Seed $7M",
+    "key_capability": "Agentic identity security across human, machine, OAuth, service-account and AI-agent identities \u2014 autonomous investigation and remediation, with human handoff for high-impact changes",
+    "notes": "Agentic identity security team that uses AI agents to gather cross-system context,\ninvestigate access posture and runtime issues, and either remediate risks\nautonomously or route high-impact changes to humans. Founded 2025, based in New York\nand Tel Aviv. $7M seed (4 Jun 2026) led by Ibex Investors and Skywell Capital Partners.\n\nOPEN CALL \u2014 primary capability: defaulted to agentic_security (it secures\nagent/NHI identities). Alternative is ai_powered_soc_xdr (the autonomous\ninvestigate-and-remediate loop). Default set; flagged in PR for confirmation. The\nai_powered_soc_xdr dimension is left false pending that decision rather than guessed.\n",
+    "status": "NEW",
+    "last_updated": "2026-06",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "PENSAR",
     "category": "Agentic AI Security",
     "hq": "San Francisco, CA",
@@ -762,6 +834,30 @@
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Runlayer",
+    "category": "Agentic AI Security",
+    "hq": "New York, NY",
+    "funding_stage": "Series A $30M (total $42M)",
+    "key_capability": "Security and control plane for enterprise MCP and AI agents \u2014 runtime Guard scanning for prompt injection and data leakage, plus shadow-AI discovery of unmanaged agents",
+    "notes": "MCP enablement + control plane for corporate AI agents. Adjacent to the Arcade.dev\nenablement exclusion, but included because the runtime controls are genuine security\nfunctions \u2014 Guard scanning for prompt injection and data leakage, plus shadow-AI\ndiscovery of unmanaged agents \u2014 not enablement glue. Primary capability:\nagentic_security.\n\nFunding: $42M total \u2014 $11M seed (Nov 2025) + $30M Series A (Jun 2026), Series A led\nby Felicis with Khosla Ventures participating. Customers include Gusto, dbt Labs,\nInstacart, and Opendoor. Founded by Andrew Berman (prev. Nanit, Vowel). New York based.\n",
+    "status": "NEW",
+    "last_updated": "2026-06",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": true,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "SPLX.AI",
