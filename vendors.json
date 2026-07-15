@@ -51,7 +51,7 @@
     "hq": "San Jose, CA",
     "funding_stage": "Public (CSCO)",
     "key_capability": "Runtime AI protection and validation \u2014 model/application guardrails and",
-    "notes": "2026-07: Cisco announced intent to acquire WideField Security; technology to be integrated into Splunk suite for agentic SOC capabilities. Deal not yet closed as of sweep date.",
+    "notes": "July 2026: Cisco announced intent to acquire WideField Security; deal not closed. WideField technology targets agentic SOC capabilities and is planned for integration into Cisco Splunk. Pending close, no status change applied.",
     "status": "NEW",
     "last_updated": "2026-07",
     "verification_needed": true,
@@ -75,7 +75,7 @@
     "hq": "Seattle, WA",
     "funding_stage": "Public (FFIV)",
     "key_capability": "Enterprise AI traffic management & security",
-    "notes": "2026-06: F5 launched the F5 AI Security Platform, providing continuous visibility and governance across enterprise AI applications, models, agents, and APIs. Simultaneously acquired SurePath AI to add AI model/agent discovery and vulnerability testing. Shadow AI discovery and agentic security capabilities now confirmed via primary sources.",
+    "notes": "June 2026: F5 launched F5 AI Security Platform, acquiring SurePath AI (AI discovery, intent classification, shadow AI detection) as a key component. Platform now covers shadow AI discovery, AI model/agent governance, vulnerability testing, and API security across enterprise AI deployments. SurePath AI is not a separately tracked vendor.",
     "status": "UPDATED",
     "last_updated": "2026-07",
     "capabilities": {
