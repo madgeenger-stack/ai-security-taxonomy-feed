@@ -51,7 +51,7 @@
     "hq": "San Jose, CA",
     "funding_stage": "Public (CSCO)",
     "key_capability": "Runtime AI protection and validation \u2014 model/application guardrails and",
-    "notes": "July 2026: Cisco announced intent to acquire WideField Security; deal not closed. WideField technology targets agentic SOC capabilities and is planned for integration into Cisco Splunk. Pending close, no status change applied.",
+    "notes": "Cisco acquired Galileo Technologies (closed May 2026) for real-time agentic AI lifecycle visibility integrated into Splunk/AI Defense. Subsequently acquired WideField for AI agent identity services, also integrating with Splunk. Both acquisitions extend Cisco AI Defense into agentic security and AI governance. WideField deal close date not explicitly confirmed; verification advised.",
     "status": "NEW",
     "last_updated": "2026-07",
     "verification_needed": true,
@@ -64,7 +64,7 @@
       "ai_red_teaming": true,
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": false,
-      "ai_governance": false,
+      "ai_governance": true,
       "ai_powered_soc_xdr": true
     },
     "capabilities_verified": false
@@ -75,7 +75,7 @@
     "hq": "Seattle, WA",
     "funding_stage": "Public (FFIV)",
     "key_capability": "Enterprise AI traffic management & security",
-    "notes": "June 2026: F5 launched F5 AI Security Platform, acquiring SurePath AI (AI discovery, intent classification, shadow AI detection) as a key component. Platform now covers shadow AI discovery, AI model/agent governance, vulnerability testing, and API security across enterprise AI deployments. SurePath AI is not a separately tracked vendor.",
+    "notes": "F5 acquired SurePath AI (announced 2026-06-23) as part of the F5 AI Security Platform launch. Platform adds shadow AI discovery, AI model and agent inventory, vulnerability testing, and API governance to the existing LLM gateway product. Acquisition described as closed in press materials.",
     "status": "UPDATED",
     "last_updated": "2026-07",
     "capabilities": {
@@ -766,6 +766,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "NewCore",
+    "category": "Agentic AI Security",
+    "hq": "Unknown",
+    "funding_stage": "Seed/Series A $66M",
+    "key_capability": "AI agent identity authentication and governance at scale",
+    "notes": "Emerged from stealth 2026-06-15. Focus on authenticating, governing, and controlling AI agents as enterprise deployments scale. $66M funding disclosed; round stage not specified in source.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "Noma Security",
     "category": "Agentic AI Security",
     "hq": "Tel Aviv, Israel",
@@ -905,6 +929,30 @@
       "ai_powered_soc_xdr": true
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Tenet Security",
+    "category": "Agentic AI Security",
+    "hq": "Israel",
+    "funding_stage": "Seed $6M",
+    "key_capability": "Monitor and control autonomous enterprise AI agents",
+    "notes": "Emerged from stealth with $6M seed funding. Platform designed to monitor and control autonomous AI agents in enterprise environments. Single secondary source (Ynet News); primary press release not independently verified.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Trent AI",
@@ -1257,6 +1305,30 @@
       "all_false_by_design": true,
       "rationale": "CONFSEC is a confidential / provably-private AI inference layer (an enterprise build of Apple's Private Cloud Compute) \u2014 prompts and metadata stay unseen and unstored at inference via OHTTP, blind signatures, remote attestation, TEEs/TPMs, and transparency logs. This is data-in-use privacy at inference time and maps to none of the 10 current capability dimensions. Closest adjacency is dspm_ai_data_sec, but DSPM covers data discovery and classification at rest \u2014 a different problem \u2014 so it stays false. Candidate trigger for an 11th dimension (confidential_inference) if more TEE-attestation inference vendors emerge."
     }
+  },
+  {
+    "name": "Ent",
+    "category": "End-User / Endpoint AI Security",
+    "hq": "Unknown",
+    "funding_stage": "Seed $100M",
+    "key_capability": "Intent-aware workspace security for users and AI agents",
+    "notes": "Emerged from stealth 2026-06-16. Founded by Elias Manousos and Brandon Dixon (ex-RiskIQ, acquired by Microsoft). Platform intercepts and evaluates user and agent actions before execution. Investors include Sequoia Capital, Felicis, IQT, Shield Capital.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": true,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Harmonic Security",
