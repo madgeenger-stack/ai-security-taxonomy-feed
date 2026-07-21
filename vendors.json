@@ -75,7 +75,7 @@
     "hq": "Seattle, WA",
     "funding_stage": "Public (FFIV)",
     "key_capability": "Enterprise AI traffic management & security",
-    "notes": "F5 acquired SurePath AI (announced 2026-06-23) as part of the F5 AI Security Platform launch. Platform adds shadow AI discovery, AI model and agent inventory, vulnerability testing, and API governance to the existing LLM gateway product. Acquisition described as closed in press materials.",
+    "notes": "Acquired SurePath AI (Denver-based, shadow AI detection/discovery) in June 2026 as a key component of the F5 AI Security Platform launch. Platform provides continuous visibility, governance, and protection across enterprise AI applications, models, agents, and APIs.",
     "status": "UPDATED",
     "last_updated": "2026-07",
     "capabilities": {
@@ -624,6 +624,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "Virtue AI",
+    "category": "AI Security Posture Mgmt (AI-SPM)",
+    "hq": "San Francisco, CA",
+    "funding_stage": "Unknown",
+    "key_capability": "Shadow AI discovery and monitoring for unapproved AI agents",
+    "notes": "Announced 'Shadow AI' product 2026-06-23 per press release reported by intelligence360. Product discovers and monitors AI tools and AI agents across the enterprise. Funding stage not disclosed in available sources.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "Apex Security",
     "category": "Agentic AI Security",
     "hq": "San Francisco, CA",
@@ -811,6 +835,30 @@
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Oak",
+    "category": "Agentic AI Security",
+    "hq": "Tel Aviv, Israel / San Francisco, CA",
+    "funding_stage": "Seed $60M",
+    "key_capability": "AI-native identity operating system for AI agent governance",
+    "notes": "Emerged from stealth 2026-07-15. Co-founded by Shai Morag. Focuses on AI agent identity management and access control. $60M seed round disclosed at launch.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Offroad",
@@ -1446,6 +1494,30 @@
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Reken",
+    "category": "End-User / Endpoint AI Security",
+    "hq": "Unknown",
+    "funding_stage": "Unknown",
+    "key_capability": "On-device detection of AI-powered phishing and impersonation attacks",
+    "notes": "Emerged from stealth per Biometric Update, date approximate July 2026. On-device platform; no cloud processing. Targets AI-generated phishing, impersonation, and social engineering. Funding amount not disclosed in available sources.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": true,
+      "agentic_security": false,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": true,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Abnormal Security",
