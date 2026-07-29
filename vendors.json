@@ -75,7 +75,7 @@
     "hq": "Seattle, WA",
     "funding_stage": "Public (FFIV)",
     "key_capability": "Enterprise AI traffic management & security",
-    "notes": "Acquired SurePath AI (Denver-based, shadow AI detection/discovery) in June 2026 as a key component of the F5 AI Security Platform launch. Platform provides continuous visibility, governance, and protection across enterprise AI applications, models, agents, and APIs.",
+    "notes": "F5 acquired SurePath AI (Denver-based, network-based shadow AI detection and discovery) in June 2026 per SecurityWeek M&A roundup. Acquisition used to power the F5 AI Security Platform. Adds shadow AI discovery capability to the product.",
     "status": "UPDATED",
     "last_updated": "2026-07",
     "capabilities": {
@@ -142,11 +142,11 @@
     "name": "Prompt Security",
     "category": "AI Firewall / LLM Gateway",
     "hq": "Tel Aviv, Israel",
-    "funding_stage": "Acquired",
+    "funding_stage": "Acquired (SentinelOne, $250M)",
     "key_capability": "Prompt injection prevention & GenAI firewall",
-    "notes": "Acquired by SentinelOne",
+    "notes": "Reported acquired by SentinelOne for approximately $250M per secondary source (olam.business, 2026-07). Acquirer SentinelOne is a tracked vendor (Platform & Ecosystem Plays). Deal reported as closed. Single secondary source; primary confirmation (SentinelOne press release or SEC filing) not found in sweep.",
     "status": "ACQUIRED/EXITED",
-    "last_updated": null,
+    "last_updated": "2026-07",
     "capabilities": {
       "llm_firewall": true,
       "prompt_injection_defense": true,
@@ -490,9 +490,9 @@
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "funding_stage": "Unknown",
     "key_capability": "Shadow AI discovery, AI agent inventory and governance, MCP server connection detection",
-    "notes": "Launched browser-based shadow AI agent discovery 2026-05-28, per PR Newswire. Capability discovers agents created outside IT visibility, builds auditable agent inventory, and identifies risks such as publicly exposed agents. Extends prior shadow AI discovery to agentic governance layer.",
+    "notes": "Press release (prnewswire, 2026-07) confirms launch of browser-based shadow AI agent discovery, covering hidden OAuth grants and browser extensions. Positions product as SaaS and AI security governance platform with agent discovery.",
     "status": "UPDATED",
-    "last_updated": "2026-06",
+    "last_updated": "2026-07",
     "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
@@ -788,6 +788,30 @@
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Neo",
+    "category": "Agentic AI Security",
+    "hq": "Boston, MA",
+    "funding_stage": "Series A $75M ($100M total)",
+    "key_capability": "AI agent security and control across enterprise environments",
+    "notes": "Emerged from stealth 2026-07-20. $100M total funding: $75M Series A led by Andreessen Horowitz and Bessemer Venture Partners, with participation from Craft Ventures and Merlin Ventures, plus a prior seed round. Founded by Nick Warner (former SentinelOne COO). Platform targets securing and controlling AI agents across enterprise software. Sources: SecurityWeek, Boston Business Journal, CTech.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "NewCore",
@@ -1260,11 +1284,11 @@
     "name": "Aurascape",
     "category": "End-User / Endpoint AI Security",
     "hq": "San Jose, CA",
-    "funding_stage": "Seed",
+    "funding_stage": "Series A $50M",
     "key_capability": "AI network visibility & data protection",
-    "notes": null,
+    "notes": "CRN (2026) references $50M funding round led by Mayfield Fund, raised April 2025. Also references 'Zero-Bypass' as a named product capability. Funding stage upgraded from Seed based on this reporting; verification against primary source recommended.",
     "status": "ACTIVE",
-    "last_updated": null,
+    "last_updated": "2026-07",
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1374,6 +1398,30 @@
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": true,
       "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
+    "name": "Glow",
+    "category": "End-User / Endpoint AI Security",
+    "hq": "Palo Alto, CA",
+    "funding_stage": "Series A $180M / $1.2B val",
+    "key_capability": "AI-native endpoint security for autonomous AI agents",
+    "notes": "Emerged from stealth 2026-07-22. $180M Series A led by Sequoia Capital with participation from Cyberstarts, Greenoaks, Redpoint Ventures. Founded by former Meta and Snowflake executives. Positioned as AI-native endpoint security designed for environments where autonomous AI agents operate alongside employees. Multiple sources (TechCrunch, CTech, Startup Fortune) confirm launch and funding.",
+    "status": "NEW",
+    "last_updated": "2026-07",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": true,
+      "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": false
@@ -1893,9 +1941,9 @@
     "hq": "Mountain View, CA",
     "funding_stage": "Public (S)",
     "key_capability": "AI-powered EDR/XDR + Purple AI analyst",
-    "notes": "Added user behavior observability and employee/application AI misuse detection through acquisition of Prompt Security, layering AI firewall and policy enforcement capabilities onto the SentinelOne platform",
+    "notes": "Secondary source reports acquisition of Prompt Security (GenAI security, LLM firewall) for ~$250M. If confirmed, adds llm_firewall and prompt_injection_defense capabilities to platform. Verification against primary SentinelOne source required.",
     "status": "UPDATED",
-    "last_updated": "2026-05",
+    "last_updated": "2026-07",
     "capabilities": {
       "llm_firewall": true,
       "prompt_injection_defense": true,
