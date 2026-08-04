@@ -75,9 +75,9 @@
     "hq": "Seattle, WA",
     "funding_stage": "Public (FFIV)",
     "key_capability": "Enterprise AI traffic management & security",
-    "notes": "F5 acquired SurePath AI (Denver-based, network-based shadow AI detection and discovery) in June 2026 per SecurityWeek M&A roundup. Acquisition used to power the F5 AI Security Platform. Adds shadow AI discovery capability to the product.",
+    "notes": "F5 acquired SurePath AI (Denver-based, network-based shadow AI detection and discovery) in June 2026. SurePath AI technology is being integrated into the F5 AI Security Platform.",
     "status": "UPDATED",
-    "last_updated": "2026-07",
+    "last_updated": "2026-08",
     "capabilities": {
       "llm_firewall": true,
       "prompt_injection_defense": true,
