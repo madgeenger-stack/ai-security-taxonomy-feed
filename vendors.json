@@ -439,6 +439,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "C1",
+    "category": "AI Security Posture Mgmt (AI-SPM)",
+    "hq": "Unknown",
+    "funding_stage": "Unknown",
+    "key_capability": "Shadow AI discovery for unauthorized agents and AI-adjacent identities",
+    "notes": "Launched shadow AI discovery feature on 2026-07-27, scanning endpoints, cloud, and identity environments to detect unapproved AI tools, AI agents, MCP servers, and exposed credentials. Assigns ownership and integrates into existing identity governance platform. Confirmed by Help Net Security, AIThority, Techzine, and GlobeNewswire press release.",
+    "status": "NEW",
+    "last_updated": "2026-08",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": false,
+      "shadow_ai_discovery": true,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "Concentric AI",
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "hq": "San Jose, CA",
@@ -576,6 +600,30 @@
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Permiso Security",
+    "category": "AI Security Posture Mgmt (AI-SPM)",
+    "hq": "Unknown",
+    "funding_stage": "Series A (~$29M total raised); acquisition pending (Okta, ~$200M, not confirmed closed)",
+    "key_capability": "AI agent and machine identity monitoring post-authentication",
+    "notes": "Okta announced intent to acquire Permiso for ~$200M (TechCrunch, 2026-07-30). Deal not confirmed closed as of sweep date. Permiso focuses on continuous monitoring of user, application, and AI agent activity after login \u2014 NHI and AI agent governance use case. Prior funding ~$29M; Series A April 2024 valued at ~$80M.",
+    "status": "NEW",
+    "last_updated": "2026-08",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Reco.ai",
@@ -1125,9 +1173,9 @@
     "hq": "New York, NY",
     "funding_stage": "Series E $540M / $6B val",
     "key_capability": "Cloud data security & AI data governance",
-    "notes": "Expanded into agentic AI data security with the acquisition of Ryft, adding capabilities to secure data access and flows for AI agents specifically",
+    "notes": "Announced acquisition of Oasis Security (NHI/AI agent identity security) for reported $1B. Deal not confirmed closed as of sweep date. If closed, agentic_security and ai_spm capabilities should be re-evaluated upward.",
     "status": "UPDATED",
-    "last_updated": "2026-05",
+    "last_updated": "2026-08",
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1613,6 +1661,30 @@
     "capabilities_verified": true
   },
   {
+    "name": "Cylake",
+    "category": "Multi-Capability Pure Plays",
+    "hq": "Unknown",
+    "funding_stage": "Seed $45M",
+    "key_capability": "AI-native cybersecurity platform across detection and response",
+    "notes": "Raised $45M seed round in March 2026. Founded by Nir Zuk, creator of Palo Alto Networks. Described as an AI-native cybersecurity platform; specific capability areas not fully detailed in available sources.",
+    "status": "NEW",
+    "last_updated": "2026-08",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": false,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": true
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "Darktrace",
     "category": "Multi-Capability Pure Plays",
     "hq": "Cambridge, UK",
@@ -1662,11 +1734,11 @@
     "name": "Onyx AI",
     "category": "Multi-Capability Pure Plays",
     "hq": "San Francisco, CA",
-    "funding_stage": "Series A",
+    "funding_stage": "Series B $113M ($153M total) / $640M val",
     "key_capability": "Enterprise AI security platform",
-    "notes": null,
-    "status": "ACTIVE",
-    "last_updated": null,
+    "notes": "Raised $113M Series B led by Bessemer Venture Partners at $640M valuation. Prior rounds: $5M Seed + $35M Series A = $40M, plus $113M Series B. Round closed approximately July 2026.",
+    "status": "UPDATED",
+    "last_updated": "2026-08",
     "capabilities": {
       "llm_firewall": true,
       "prompt_injection_defense": true,
