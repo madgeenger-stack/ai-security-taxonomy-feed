@@ -444,14 +444,14 @@
     "hq": "Unknown",
     "funding_stage": "Unknown",
     "key_capability": "Shadow AI discovery for unauthorized agents and AI-adjacent identities",
-    "notes": "Launched shadow AI discovery feature on 2026-07-27, scanning endpoints, cloud, and identity environments to detect unapproved AI tools, AI agents, MCP servers, and exposed credentials. Assigns ownership and integrates into existing identity governance platform. Confirmed by Help Net Security, AIThority, Techzine, and GlobeNewswire press release.",
-    "status": "NEW",
+    "notes": "Launched shadow AI discovery feature 2026-07-27, scanning endpoints and cloud/identity environments to detect unapproved AI tools, AI agents, MCP servers, and exposed credentials. Assigns ownership and integrates with existing identity governance workflows. Sources: helpnetsecurity.com 2026-07-27, techzine.eu 2026-07-27.",
+    "status": "UPDATED",
     "last_updated": "2026-08",
     "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
-      "agentic_security": false,
+      "agentic_security": true,
       "shadow_ai_discovery": true,
       "ai_spm": true,
       "ai_red_teaming": false,
@@ -653,14 +653,14 @@
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "funding_stage": "Public (NASDAQ: SAIL)",
     "key_capability": "Shadow AI Remediation \u2014 discovery, monitoring, and security governance for AI tool usage",
-    "notes": "IAM incumbent (not previously tracked) launched Shadow AI Remediation product per CRN AI 100 2026. Provides shadow AI discovery and governance layered onto existing identity infrastructure. Adjacent-watchlist trigger: IAM category.",
-    "status": "NEW",
-    "last_updated": "2026-06",
+    "notes": "SailPoint Agentic Fabric launched May 2026; Entro Security acquisition closed June 29, 2026, strengthening AI agent discovery and non-human identity governance capabilities. Source: tbdcyber.com (secondary analysis, 2026).",
+    "status": "UPDATED",
+    "last_updated": "2026-08",
     "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
-      "agentic_security": false,
+      "agentic_security": true,
       "shadow_ai_discovery": true,
       "ai_spm": true,
       "ai_red_teaming": false,
@@ -669,7 +669,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Virtue AI",
@@ -694,6 +694,30 @@
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Act Security",
+    "category": "Agentic AI Security",
+    "hq": "Israel (Tel Aviv, inferred from CTech/Calcalist coverage)",
+    "funding_stage": "Seed/Stealth $60M total",
+    "key_capability": "Preventing AI agents from inheriting dangerous cloud permissions",
+    "notes": "Emerged from stealth 2026-07-28 with $60M total funding. Platform described as action-centric cloud security focused on AI agent access path exploitation and dangerous permission inheritance. Investors include YL Ventures, Canaan Partners, and Zeev Ventures per stiennon.substack.com. Sources: startupfortune.com 2026-07-28, calcalistech.com 2026-07-28.",
+    "status": "NEW",
+    "last_updated": "2026-08",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Apex Security",
