@@ -605,10 +605,10 @@
     "name": "Permiso Security",
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "hq": "Unknown",
-    "funding_stage": "Series A (~$29M total raised); acquisition pending (Okta, ~$200M, not confirmed closed)",
+    "funding_stage": "Acquired (Okta, ~$200M)",
     "key_capability": "AI agent and machine identity monitoring post-authentication",
-    "notes": "Okta announced intent to acquire Permiso for ~$200M (TechCrunch, 2026-07-30). Deal not confirmed closed as of sweep date. Permiso focuses on continuous monitoring of user, application, and AI agent activity after login \u2014 NHI and AI agent governance use case. Prior funding ~$29M; Series A April 2024 valued at ~$80M.",
-    "status": "NEW",
+    "notes": "Acquisition by Okta for approximately $200M reported as closed per startuphub.ai (July 2026 deal roundup) and referenced as completed by valueaddvc.com. Prior canonical record flagged deal as pending/unconfirmed. No Okta primary press release confirmed in this sweep; human verification against Okta IR or press release recommended before treating as closed.",
+    "status": "ACQUIRED/EXITED",
     "last_updated": "2026-08",
     "verification_needed": true,
     "capabilities": {
@@ -653,7 +653,7 @@
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "funding_stage": "Public (NASDAQ: SAIL)",
     "key_capability": "Shadow AI Remediation \u2014 discovery, monitoring, and security governance for AI tool usage",
-    "notes": "SailPoint Agentic Fabric launched May 2026; Entro Security acquisition closed June 29, 2026, strengthening AI agent discovery and non-human identity governance capabilities. Source: tbdcyber.com (secondary analysis, 2026).",
+    "notes": "Agentic Fabric launched May 2026; Entro Security acquisition closed June 29, 2026, adding AI agent discovery and non-human identity governance. Capabilities now include AI agent discovery, agent identity controls, and agentic governance layered on top of existing IGA platform.",
     "status": "UPDATED",
     "last_updated": "2026-08",
     "verification_needed": false,
@@ -1822,6 +1822,30 @@
       "ai_powered_soc_xdr": true
     },
     "capabilities_verified": true
+  },
+  {
+    "name": "Broadcom (VMware AgentMinder)",
+    "category": "Platform & Ecosystem Plays",
+    "hq": "San Jose, CA",
+    "funding_stage": "Public (AVGO)",
+    "key_capability": "Agentic AI governance and Zero Trust control for autonomous agents",
+    "notes": "Broadcom launched AgentMinder control plane for governing autonomous AI agents, integrated with VMware vDefend (Zero Trust lateral security) and VMware Avi Load Balancer. Announcement via stocktitan.net (Broadcom press release feed). Canonical vendor name should use parent entity Broadcom; AgentMinder is the product name. Verify official product page for capability depth before full trust.",
+    "status": "NEW",
+    "last_updated": "2026-08",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
   },
   {
     "name": "Cato Networks",
