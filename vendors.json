@@ -1,5 +1,29 @@
 [
   {
+    "name": "AIR Security",
+    "category": "AI Firewall / LLM Gateway",
+    "hq": "Israel (founders from Israeli military background)",
+    "funding_stage": "Seed $50M (two rounds)",
+    "key_capability": "Firewall for AI agents and AI agent add-ons",
+    "notes": "Emerged from stealth September 1, 2026. Founded February 2026 by Yair Saban and Niv Hoffman. Sequoia Capital led initial $10M round; Greenoaks Capital Partners led subsequent round. Focus on inspecting and blocking malicious instructions in public AI add-ons and AI Skills.",
+    "status": "NEW",
+    "last_updated": "2026-09",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": true,
+      "prompt_injection_defense": true,
+      "agentic_security": true,
+      "shadow_ai_discovery": false,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "Aim Security",
     "category": "AI Firewall / LLM Gateway",
     "hq": "Israel",
@@ -675,11 +699,11 @@
     "name": "Virtue AI",
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "hq": "San Francisco, CA",
-    "funding_stage": "Seed+Series A $30M",
+    "funding_stage": "Acquired (Fortinet)",
     "key_capability": "Shadow AI discovery and monitoring for unapproved AI agents",
-    "notes": "Announced Shadow AI product 2026-06-23; discovers and monitors AI tools and agents across the enterprise. $30M combined Seed and Series A (Apr 2025) led by Lightspeed Venture Partners and Walden Catalyst. Founded by Bo Li, Dawn Song, Carlos Guestrin, Sanmi Koyejo. Core platform is VirtueRed (algorithmic AI red teaming) and VirtueGuard (guardrail models) \u2014 ai_red_teaming flipped true on verification. BOOKMARK 2026-08: VirtueGuard guardrails may justify llm_firewall/prompt_injection_defense and a category reassessment beyond AI-SPM; revisit next cycle.",
-    "status": "ACTIVE",
-    "last_updated": "2026-07",
+    "notes": "Fortinet acquisition of Virtue AI reported as closed by SecurityWeek, August 2026. Acquired for red teaming, runtime, and compliance capabilities. Previously tracked as Seed+Series A $30M.",
+    "status": "ACQUIRED/EXITED",
+    "last_updated": "2026-09",
     "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
@@ -1899,14 +1923,14 @@
     "hq": "Austin, TX",
     "funding_stage": "Public (CRWD)",
     "key_capability": "AI-native EDR/XDR + Charlotte AI SOC assistant",
-    "notes": "Acquisition of SGNL announced January 2026 at $740M enterprise value (Capstone Partners, confirmed). SGNL provides just-in-time, identity-based access governance for AI agents and non-human identities. Adds agentic security and AI governance capabilities to CrowdStrike platform. SGNL was on the excluded-from-NEW_VENDOR list, confirming prior awareness.",
+    "notes": "Falcon Guardian launched with AI agent security, shadow AI discovery (endpoint, cloud, SaaS), AI model/tool access governance, and AI-specific threat detection. Official CrowdStrike blog, September 2026.",
     "status": "UPDATED",
-    "last_updated": "2026-06",
+    "last_updated": "2026-09",
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
       "agentic_security": true,
-      "shadow_ai_discovery": false,
+      "shadow_ai_discovery": true,
       "ai_spm": true,
       "ai_red_teaming": false,
       "dspm_ai_data_sec": false,
@@ -1914,7 +1938,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Google Cloud Security",
