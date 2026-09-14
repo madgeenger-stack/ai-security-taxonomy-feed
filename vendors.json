@@ -1475,6 +1475,30 @@
     }
   },
   {
+    "name": "Cyberhaven",
+    "category": "End-User / Endpoint AI Security",
+    "hq": "Unknown",
+    "funding_stage": "Unknown",
+    "key_capability": "Agentic AI governance and shadow AI data security platform",
+    "notes": "Press release dated 2026-05-05 confirms launch of autonomous agent governance and shadow AI discovery within existing Unified AI & Data Security Platform. Expands from DLP/data security into agentic AI security and shadow AI discovery. Not previously tracked in taxonomy.",
+    "status": "NEW",
+    "last_updated": "2026-09",
+    "verification_needed": true,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": false,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": true,
+      "endpoint_ai_control": true,
+      "ai_governance": true,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": false
+  },
+  {
     "name": "Ent",
     "category": "End-User / Endpoint AI Security",
     "hq": "San Francisco, CA",
@@ -1923,7 +1947,7 @@
     "hq": "Austin, TX",
     "funding_stage": "Public (CRWD)",
     "key_capability": "AI-native EDR/XDR + Charlotte AI SOC assistant",
-    "notes": "Falcon Guardian launched with AI agent security, shadow AI discovery (endpoint, cloud, SaaS), AI model/tool access governance, and AI-specific threat detection. Official CrowdStrike blog, September 2026.",
+    "notes": "Launched Falcon Guardian, a named AI security product. Confirmed capabilities per official blog (2026-09): shadow AI discovery across endpoint, cloud, and SaaS; AI agent security; access governance for AI models and tools; sensitive data protection in AI workflows; AI-specific threat detection. Extends existing ai_powered_soc_xdr posture.",
     "status": "UPDATED",
     "last_updated": "2026-09",
     "capabilities": {
