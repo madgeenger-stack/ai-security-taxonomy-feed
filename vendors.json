@@ -559,30 +559,6 @@
     "capabilities_verified": true
   },
   {
-    "name": "Orchid Security",
-    "category": "AI Security Posture Mgmt (AI-SPM)",
-    "hq": "New York, NY",
-    "funding_stage": "Seed $36M",
-    "key_capability": "AI-driven identity and application security posture management",
-    "notes": "Emerged from stealth January 2025 with $36M seed co-led by Team8 and Intel Capital (SiliconANGLE, 2025-01-14). Identity control plane that uses LLMs to discover application authentication and authorization flows. Added AI agent identity capabilities 2026-05-28: discovers identity actors including Agent AI across managed and unmanaged environments; maps agents to originating identities, owners, applications and permissions; delegation-chain observability; agentic guardrails. Added 2026-09-09, stated as available now: AI readiness tagging; identity hygiene and risk findings for orphaned, dormant, over-permissioned and suspicious accounts; drift detection between an agent's intended purpose and observed behavior; application-level kill switches that restrict permissions, revoke credentials, disconnect tools, or suspend agent workflows; audit generation documenting agent activity (GlobeNewswire).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: agentic_security set from the 2026-05-28 and 2026-09-09 releases. shadow_ai_discovery set: discovers Agent AI identities in unmanaged environments (definition 4: discovery of unsanctioned agents counts). ai_spm set: orphaned, dormant and over-permissioned account findings applied to agent identities (Ruling B: agent posture counts), matching the basis used for Nudge Security and Exaforce. ai_governance set: inventory of AI agents paired with ownership assignment \u2014 agents mapped to their owners, applications and permissions (2026-05-28) \u2014 with audit generation of agent activity (Ruling D as narrowed 2026-09-16: inventory plus ownership qualifies). No AI usage policy or AI framework mapping found; the flag rests on reading owner attribution as ownership assignment. llm_firewall, prompt_injection_defense, ai_red_teaming, dspm_ai_data_sec, endpoint_ai_control false: no evidence. ai_powered_soc_xdr false: LLMs used for identity orchestration, not SOC work. Scope and category held pending owner decision: AI-for-identity only until 2026-05; Agentic AI Security proposed if kept.",
-    "status": "NEW",
-    "last_updated": "2026-09",
-    "verification_needed": true,
-    "capabilities": {
-      "llm_firewall": false,
-      "prompt_injection_defense": false,
-      "agentic_security": true,
-      "shadow_ai_discovery": true,
-      "ai_spm": true,
-      "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
-      "endpoint_ai_control": false,
-      "ai_governance": true,
-      "ai_powered_soc_xdr": false
-    },
-    "capabilities_verified": false
-  },
-  {
     "name": "Permiso Security",
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "hq": "Unknown",
@@ -957,6 +933,30 @@
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": false,
       "ai_governance": false,
+      "ai_powered_soc_xdr": false
+    },
+    "capabilities_verified": true
+  },
+  {
+    "name": "Orchid Security",
+    "category": "Agentic AI Security",
+    "hq": "New York, NY",
+    "funding_stage": "Seed $36M",
+    "key_capability": "AI agent identity security \u2014 agent discovery across managed and unmanaged environments, owner and permission mapping, agent posture findings, runtime kill switches",
+    "notes": "Emerged from stealth January 2025 with $36M seed co-led by Team8 and Intel Capital (SiliconANGLE, 2025-01-14). Identity control plane that uses LLMs to discover application authentication and authorization flows. Added AI agent identity capabilities 2026-05-28: discovers identity actors including Agent AI across managed and unmanaged environments; maps agents to originating identities, owners, applications and permissions; delegation-chain observability; agentic guardrails. Added 2026-09-09, stated as available now: AI readiness tagging; identity hygiene and risk findings for orphaned, dormant, over-permissioned and suspicious accounts; drift detection between an agent's intended purpose and observed behavior; application-level kill switches that restrict permissions, revoke credentials, disconnect tools, or suspend agent workflows; audit generation documenting agent activity (GlobeNewswire).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: agentic_security set from the 2026-05-28 and 2026-09-09 releases. shadow_ai_discovery set: discovers Agent AI identities in unmanaged environments (definition 4: discovery of unsanctioned agents counts). ai_spm set: orphaned, dormant and over-permissioned account findings applied to agent identities (Ruling B: agent posture counts), matching the basis used for Nudge Security and Exaforce. ai_governance set: inventory of AI agents paired with ownership assignment \u2014 agents mapped to their owners, applications and permissions (2026-05-28) \u2014 with audit generation of agent activity (Ruling D as narrowed 2026-09-16: inventory plus ownership qualifies). No AI usage policy or AI framework mapping found; the flag rests on reading owner attribution as ownership assignment. llm_firewall, prompt_injection_defense, ai_red_teaming, dspm_ai_data_sec, endpoint_ai_control false: no evidence. ai_powered_soc_xdr false: LLMs used for identity orchestration, not SOC work.\n2026-09: capabilities verified against docs/capability-definitions.md; ai_governance rests on the Ruling D ownership decision (discovered ownership counts).\n2026-09 scope decision (owner, 2026-09-17): kept in scope. Category moved from AI Security Posture Mgmt (AI-SPM) to Agentic AI Security: every flag set is agent-scoped, and ai_spm qualifies only through Ruling B (agent posture), so it is not evidence for the AI-SPM category.",
+    "status": "ACTIVE",
+    "last_updated": "2026-09",
+    "verification_needed": false,
+    "capabilities": {
+      "llm_firewall": false,
+      "prompt_injection_defense": false,
+      "agentic_security": true,
+      "shadow_ai_discovery": true,
+      "ai_spm": true,
+      "ai_red_teaming": false,
+      "dspm_ai_data_sec": false,
+      "endpoint_ai_control": false,
+      "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
     "capabilities_verified": true
