@@ -971,14 +971,14 @@
     "hq": "San Francisco, CA",
     "funding_stage": "Seed",
     "key_capability": "AI agent security & compliance",
-    "notes": "2026-09 audit (checked against docs/capability-definitions.md). Set false: shadow_ai_discovery, ai_spm and ai_governance: none is supported on pensar.dev or docs.pensar.dev. Pensar sells AI pentesting; its attack-surface discovery covers HTTP endpoints, APIs, subdomains and open ports, not AI tools; red-team output is test findings, not posture findings; testing maps to OWASP Top 10 and OWASP API Top 10, which are not AI-specific frameworks. Not changed, record left unverified: ai_red_teaming (agent red teaming live by 2026-06-15; launch date not established); agentic_security (true only if adversarial testing of MCP servers counts as MCP security; pending owner decision).",
+    "notes": "2026-09 audit (checked against docs/capability-definitions.md). Set false: shadow_ai_discovery, ai_spm and ai_governance: none is supported on pensar.dev or docs.pensar.dev. Pensar sells AI pentesting; its attack-surface discovery covers HTTP endpoints, APIs, subdomains and open ports, not AI tools; red-team output is test findings, not posture findings; testing maps to OWASP Top 10 and OWASP API Top 10, which are not AI-specific frameworks. Not changed, record left unverified: ai_red_teaming (agent red teaming live by 2026-06-15; launch date not established); agentic_security (true only if adversarial testing of MCP servers counts as MCP security; pending owner decision). Owner ruling 2026-09-17: agentic_security set false. Adversarially testing MCP servers is red teaming, not MCP security; the flag covers securing agents, not testing them, and Pensar is a pentesting company.",
     "status": "ACTIVE",
     "last_updated": "2026-09",
     "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
-      "agentic_security": true,
+      "agentic_security": false,
       "shadow_ai_discovery": false,
       "ai_spm": false,
       "ai_red_teaming": false,
@@ -1184,7 +1184,7 @@
     "hq": "New York, NY",
     "funding_stage": "$600M / $12B val (series not named)",
     "key_capability": "Cloud data security & AI data governance",
-    "notes": "Acquired Oasis Security (NHI/AI agent identity security) for $1B: announced 2026-07-28, completion announced 2026-09-03 (Cyera press release); Oasis operates as Cyera Identity. Funding: Series E $540M at $6B (2025-06); Series F $400M at $9B led by Blackstone (2026-01-08); $600M at $12B led by Evolution Equity Partners, series not named (2026-06-10) (Cyera press releases). 2026-09 audit (checked against docs/capability-definitions.md). Set true: ai_red_teaming: Agent Guardian, launched 2026-08-03, continuously red-teams defenses against prompt injection, jailbreaking and privilege escalation (Cyera press release; cyera.com/platform/agent-guardian). Capability shipped after the 2026-06 bulk verification. Not changed, record left unverified: endpoint_ai_control (Browser Shield extension blocks prompts but was described as early availability; pending owner decision under Ruling E); llm_firewall and prompt_injection_defense (AI Firewall and prompt-injection blocking described on product pages without a GA release or public docs).",
+    "notes": "Acquired Oasis Security (NHI/AI agent identity security) for $1B: announced 2026-07-28, completion announced 2026-09-03 (Cyera press release); Oasis operates as Cyera Identity. Funding: Series E $540M at $6B (2025-06); Series F $400M at $9B led by Blackstone (2026-01-08); $600M at $12B led by Evolution Equity Partners, series not named (2026-06-10) (Cyera press releases). 2026-09 audit (checked against docs/capability-definitions.md). Set true: ai_red_teaming: Agent Guardian, launched 2026-08-03, continuously red-teams defenses against prompt injection, jailbreaking and privilege escalation (Cyera press release; cyera.com/platform/agent-guardian). Capability shipped after the 2026-06 bulk verification. Not changed, record left unverified: endpoint_ai_control (Browser Shield extension blocks prompts but was described as early availability; pending owner decision under Ruling E); llm_firewall and prompt_injection_defense (AI Firewall and prompt-injection blocking described on product pages without a GA release or public docs). Owner ruling 2026-09-17: endpoint_ai_control stays false. Browser Shield was described as in early availability, and early availability alone does not meet Ruling E.",
     "status": "UPDATED",
     "last_updated": "2026-09",
     "verification_needed": true,
@@ -1371,7 +1371,7 @@
     "hq": "New York, NY",
     "funding_stage": "Pre-seed, $2.5M",
     "key_capability": "AI Verification Layer \u2014 captures, verifies, and governs all enterprise AI interactions including Shadow AI and agentic deployments",
-    "notes": "Founded 2025 by Saoud Khalifah (CEO) and Rob Gross (COO), the founders of Fakespot (acquired by Mozilla 2023), with Sen Tian as CAIO. Pre-seed co-led by Sovereign's Capital and Chingona Ventures, December 2025. Positions as \"AI judging AI\" for shadow AI detection, policy enforcement, and SOC 2 compliance support. 2026-09 audit (checked against docs/capability-definitions.md). Set false: shadow_ai_discovery: the only shipped product, Orpheus, is an endpoint agent for coding agents with no discovery of unsanctioned AI; Ciphero's discovery product is listed as a stealth release coming soon (ciphero.ai/cicero), which Ruling E excludes. Not changed, record left unverified: Orpheus capabilities supporting prompt_injection_defense, agentic_security, dspm_ai_data_sec, endpoint_ai_control and ai_governance lack an established ship date; ai_powered_soc_xdr (a built-in AI analyst inside a securing-AI product) is pending owner decision.",
+    "notes": "Founded 2025 by Saoud Khalifah (CEO) and Rob Gross (COO), the founders of Fakespot (acquired by Mozilla 2023), with Sen Tian as CAIO. Pre-seed co-led by Sovereign's Capital and Chingona Ventures, December 2025. Positions as \"AI judging AI\" for shadow AI detection, policy enforcement, and SOC 2 compliance support. 2026-09 audit (checked against docs/capability-definitions.md). Set false: shadow_ai_discovery: the only shipped product, Orpheus, is an endpoint agent for coding agents with no discovery of unsanctioned AI; Ciphero's discovery product is listed as a stealth release coming soon (ciphero.ai/cicero), which Ruling E excludes. Not changed, record left unverified: Orpheus capabilities supporting prompt_injection_defense, agentic_security, dspm_ai_data_sec, endpoint_ai_control and ai_governance lack an established ship date; ai_powered_soc_xdr (a built-in AI analyst inside a securing-AI product) is pending owner decision. Owner ruling 2026-09-17: ai_powered_soc_xdr stays false. The flag is for AI-for-security products; an AI analyst feature inside a product that secures AI does not qualify.",
     "status": "ACTIVE",
     "last_updated": "2026-09",
     "verification_needed": true,
@@ -1615,9 +1615,10 @@
     "hq": "San Francisco, CA",
     "funding_stage": "Series D $250M / $5.1B",
     "key_capability": "AI email security & account takeover prevention",
-    "notes": null,
+    "notes": "2026-09 audit (checked against docs/capability-definitions.md): Abnormal's AI Governance product, announced to go live on 2026-08-03 (Abnormal press release) and described on abnormal.ai/platform/ai-governance, covers discovery of sanctioned and unsanctioned AI tools and agents, per-agent behavioral baselines, permission-scope findings, detection of sensitive data in AI chats, and enforcement of AI usage policies. These would support shadow_ai_discovery, agentic_security, ai_spm, dspm_ai_data_sec and ai_governance. Owner ruling 2026-09-17: Ruling E not met. A product page plus an announced live date, with no post-launch confirmation and no public documentation, is weaker than the Zscaler precedent (product page plus published docs). The five flags stay false until availability is confirmed. 2026-09: capabilities_verified demoted: the flag traced to bulk commit 479bd6f5 without per-vendor verification, and the record has open flags (the five above).",
     "status": "ACTIVE",
-    "last_updated": null,
+    "last_updated": "2026-09",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1630,7 +1631,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Artemis",
@@ -1966,22 +1967,23 @@
     "hq": "Armonk, NY",
     "funding_stage": "Public (IBM)",
     "key_capability": "QRadar SIEM + Guardium + AI-powered SOC",
-    "notes": null,
+    "notes": "2026-09: capabilities_verified demoted: the flag traced to bulk commit 479bd6f5 without per-vendor verification, and the record has unverifiable or open flags. IBM's 2025 Guardium AI Security announcements describe an AI firewall, prompt-injection and jailbreak policies, shadow AI and agent discovery, and automated red teaming (llm_firewall, prompt_injection_defense, agentic_security, shadow_ai_discovery and ai_red_teaming, all recorded false), and the existing ai_spm: true rests on the same product. Whether Guardium AI Security is still an IBM product is unresolved: its product page redirects and its docs portal carries a Varonis copyright. endpoint_ai_control is unverifiable; the only source is the Varonis-branded docs. Owner ruling 2026-09-17: under Ruling E, a support-lifecycle listing is not a product page. IBM still lists Guardium AI Security SaaS (PID 5900-BQH) on its lifecycle page with no end-of-marketing date, but publishes no current product page or documentation of its own: the product URL redirects to the general Guardium page, all IBM-authored evidence for its capabilities dates from 2025, and the live docs at ibm-ai-security.com are Varonis-copyrighted Atlas documentation (Varonis acquired AllTrue.ai, the platform's source, on 2026-02-06). llm_firewall, prompt_injection_defense, agentic_security, shadow_ai_discovery and ai_red_teaming stay false, and ai_spm is set true to false: its evidence is the same 2025 release, which cannot be accepted for one flag and rejected for five. This is not a finding that IBM withdrew the product; the evidence required to flag these capabilities is not currently available.",
     "status": "ACTIVE",
-    "last_updated": null,
+    "last_updated": "2026-09",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
       "agentic_security": false,
       "shadow_ai_discovery": false,
-      "ai_spm": true,
+      "ai_spm": false,
       "ai_red_teaming": false,
       "dspm_ai_data_sec": true,
       "endpoint_ai_control": false,
       "ai_governance": true,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Microsoft Security",
@@ -2058,9 +2060,10 @@
     "hq": "Mountain View, CA",
     "funding_stage": "Public (S)",
     "key_capability": "AI-powered EDR/XDR + Purple AI analyst",
-    "notes": "Acquired Prompt Security (GenAI security, LLM firewall): merger agreement 2025-08-05, closed 2025-09-05 (SentinelOne Form 10-Q for the quarter ended 2025-10-31; fair value of total consideration ~$159.3M, ~$250M reported at announcement). Prompt Security capabilities are now part of the SentinelOne platform. Earlier note described the deal as unconfirmed pending a primary source.",
+    "notes": "Acquired Prompt Security (GenAI security, LLM firewall): merger agreement 2025-08-05, closed 2025-09-05 (SentinelOne Form 10-Q for the quarter ended 2025-10-31; fair value of total consideration ~$159.3M, ~$250M reported at announcement). Prompt Security capabilities are now part of the SentinelOne platform. Earlier note described the deal as unconfirmed pending a primary source. 2026-09: capabilities_verified demoted: the flag traced to bulk commit 479bd6f5 without per-vendor verification, and the record has unverifiable or open flags. The 2026-09 audit sourced nine flags; ai_red_teaming (recorded false) is unverifiable: Prompt AI Red Teaming appears in SentinelOne's 2026-03-23 RSAC release with no availability date, and no public documentation was found.",
     "status": "UPDATED",
     "last_updated": "2026-09",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": true,
       "prompt_injection_defense": true,
@@ -2073,7 +2076,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Tenable",
