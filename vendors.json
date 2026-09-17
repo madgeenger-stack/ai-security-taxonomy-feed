@@ -1237,29 +1237,6 @@
     "capabilities_verified": true
   },
   {
-    "name": "Apex",
-    "category": "End-User / Endpoint AI Security",
-    "hq": "San Francisco, CA",
-    "funding_stage": "Seed",
-    "key_capability": "AI usage monitoring & data protection",
-    "notes": null,
-    "status": "ACTIVE",
-    "last_updated": null,
-    "capabilities": {
-      "llm_firewall": false,
-      "prompt_injection_defense": false,
-      "agentic_security": false,
-      "shadow_ai_discovery": true,
-      "ai_spm": false,
-      "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
-      "endpoint_ai_control": true,
-      "ai_governance": true,
-      "ai_powered_soc_xdr": false
-    },
-    "capabilities_verified": true
-  },
-  {
     "name": "Aurascape",
     "category": "End-User / Endpoint AI Security",
     "hq": "San Jose, CA",
