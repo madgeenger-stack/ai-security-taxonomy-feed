@@ -234,29 +234,6 @@
     "capabilities_verified": true
   },
   {
-    "name": "Aisy",
-    "category": "AI Red Teaming & Testing",
-    "funding_stage": "Seed $2.3M",
-    "key_capability": "AI-driven vulnerability management and threat prioritization",
-    "notes": "Emerged from stealth per SecurityWeek. Focuses on attacker-perspective vulnerability management with AI-native threat prioritization. Early stage; monitor for additional primary source confirmation.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: ai_red_teaming removed \u2014 product is AI-assisted vulnerability ticket prioritization and attack-chain mapping of conventional infrastructure, not adversarial testing of AI systems (SecurityWeek, 2026-01-30). No capability flags supported. Scope held pending owner decision; AI Red Teaming & Testing category does not fit.",
-    "status": "NEW",
-    "last_updated": "2026-09",
-    "verification_needed": true,
-    "capabilities": {
-      "llm_firewall": false,
-      "prompt_injection_defense": false,
-      "agentic_security": false,
-      "shadow_ai_discovery": false,
-      "ai_spm": false,
-      "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
-      "endpoint_ai_control": false,
-      "ai_governance": false,
-      "ai_powered_soc_xdr": false
-    },
-    "capabilities_verified": false
-  },
-  {
     "name": "Cranium",
     "category": "AI Red Teaming & Testing",
     "hq": "Parsippany, NJ",
@@ -1312,30 +1289,6 @@
     "capabilities_verified": true
   },
   {
-    "name": "Cydelphi",
-    "category": "Digital Forensics & Incident Response (DFIR)",
-    "hq": "Dallas, TX",
-    "funding_stage": "Seed $3M",
-    "key_capability": "AI-native Digital Forensics and Incident Response (DFIR) platform",
-    "notes": "Emerged from stealth 2026-02-12 with $3M seed led by Glasswing Ventures (Blu Ventures, Hyde Park Angels, Merlin Group participating) and launched a patent-pending AI-native DFIR platform: agentic AI generates and executes forensic playbooks, triages evidence, maps TTPs, and restores systems from verified clean backups (GlobeNewswire). No product feature found that secures AI systems or AI usage.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: scope held pending owner decision \u2014 AI is the product's mechanism, not its subject. No capability flags set. If kept in scope, evidence supports ai_powered_soc_xdr only.",
-    "status": "UPDATED",
-    "last_updated": "2026-09",
-    "verification_needed": true,
-    "capabilities": {
-      "llm_firewall": false,
-      "prompt_injection_defense": false,
-      "agentic_security": false,
-      "shadow_ai_discovery": false,
-      "ai_spm": false,
-      "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
-      "endpoint_ai_control": false,
-      "ai_governance": false,
-      "ai_powered_soc_xdr": false
-    },
-    "capabilities_verified": false
-  },
-  {
     "name": "Apex",
     "category": "End-User / Endpoint AI Security",
     "hq": "San Francisco, CA",
@@ -1698,10 +1651,10 @@
     "hq": "La Jolla, CA",
     "funding_stage": "Acquired",
     "key_capability": "AI-driven EDR/XDR with managed detection and response",
-    "notes": "Acquired by LevelBlue: announced 2025-10-14, closed 2025-11-25 (LevelBlue press releases). Pre-acquisition product: Cybereason Defense Platform \u2014 NGAV, EDR, XDR, MDR, DFIR, with AI/ML-driven detection. No pre-acquisition feature found that secures AI systems or AI usage.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: scope held pending owner decision \u2014 AI-for-security EDR/XDR vendor. No capability flags set. If kept in scope, evidence supports ai_powered_soc_xdr only, and Multi-Capability Pure Plays does not fit.",
+    "notes": "Acquired by LevelBlue: announced 2025-10-14, closed 2025-11-25 (LevelBlue press releases). Pre-acquisition product: Cybereason Defense Platform \u2014 NGAV, EDR, XDR, MDR, DFIR, with AI/ML-driven detection. No pre-acquisition feature found that secures AI systems or AI usage.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: scope held pending owner decision \u2014 AI-for-security EDR/XDR vendor. No capability flags set. If kept in scope, evidence supports ai_powered_soc_xdr only, and Multi-Capability Pure Plays does not fit.\n2026-09 scope decision (owner, 2026-09-17): kept in scope on ai_powered_soc_xdr alone \u2014 AI/ML-driven EDR/XDR, MDR and DFIR. Precedent: Darktrace, Vectra AI, Abnormal Security and Artemis are tracked on that flag alone.",
     "status": "ACQUIRED/EXITED",
     "last_updated": "2026-09",
-    "verification_needed": true,
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1712,9 +1665,9 @@
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": false,
       "ai_governance": false,
-      "ai_powered_soc_xdr": false
+      "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Cylake",
