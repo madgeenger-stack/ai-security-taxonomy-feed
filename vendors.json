@@ -1043,30 +1043,6 @@
     "capabilities_verified": true
   },
   {
-    "name": "Surf AI",
-    "category": "Agentic AI Security",
-    "hq": "New York, NY",
-    "funding_stage": "Series A $57M",
-    "key_capability": "Agentic AI risk discovery and autonomous vulnerability remediation",
-    "notes": "Agentic security operations platform; emerged from stealth 2026-03-17 with $57M led by Accel (Cyberstarts, Boldstart participating). Builds a context graph from identity, security, cloud, data, HR, and IT signals; AI agents prioritize risk by business impact and coordinate remediation under human oversight. Founded 2024 by Yair Grindlinger, Elad Horn, et al. 2026-06: capability flags backfilled from public sources (SecurityWeek, SiliconANGLE); HQ corrected Israel -> New York per same sources. Flags were set under the \"Zafran precedent\" (risk-based remediation -> ai_spm + ai_powered_soc_xdr), retired by owner ruling 2026-09-17: PRD \u00a73.3 governs (agentic SecOps is not ai_spm), so the precedent is no longer a basis for these flags. The flags have not been re-checked against the definitions. This is AI-for-security rather than securing-AI; scope and category remain worth review.\n2026-09: capabilities_verified demoted. ai_spm and ai_powered_soc_xdr were set under the retired Zafran precedent (above) and backfilled in 2026-06 from secondary sources, so the record asserts verification on a basis that no longer stands. Flags are unchanged pending verification against docs/capability-definitions.md.",
-    "status": "NEW",
-    "last_updated": "2026-09",
-    "verification_needed": true,
-    "capabilities": {
-      "llm_firewall": false,
-      "prompt_injection_defense": false,
-      "agentic_security": false,
-      "shadow_ai_discovery": false,
-      "ai_spm": true,
-      "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
-      "endpoint_ai_control": false,
-      "ai_governance": false,
-      "ai_powered_soc_xdr": true
-    },
-    "capabilities_verified": false
-  },
-  {
     "name": "Tenet Security",
     "category": "Agentic AI Security",
     "hq": "USA (founded Tel Aviv, Israel)",
@@ -1832,30 +1808,6 @@
       "ai_powered_soc_xdr": true
     },
     "capabilities_verified": true
-  },
-  {
-    "name": "Zafran",
-    "category": "Multi-Capability Pure Plays",
-    "hq": "Tel Aviv, Israel",
-    "funding_stage": "Series A $30M",
-    "key_capability": "Risk-based vulnerability management with AI",
-    "notes": "2026-09: capabilities_verified demoted. The flag traced to bulk commit 479bd6f5 without per-vendor verification, and the stated basis for ai_spm and ai_powered_soc_xdr was the \"Zafran precedent\" (risk-based remediation), retired by owner ruling 2026-09-17: PRD 3.3 governs, and AI-driven vulnerability or risk management of non-AI assets is not ai_spm. ai_governance: true has no stated basis in the record. Flags are unchanged pending verification against docs/capability-definitions.md.",
-    "status": "ACTIVE",
-    "last_updated": "2026-09",
-    "verification_needed": true,
-    "capabilities": {
-      "llm_firewall": false,
-      "prompt_injection_defense": false,
-      "agentic_security": false,
-      "shadow_ai_discovery": false,
-      "ai_spm": true,
-      "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
-      "endpoint_ai_control": false,
-      "ai_governance": true,
-      "ai_powered_soc_xdr": true
-    },
-    "capabilities_verified": false
   },
   {
     "name": "Broadcom (VMware AgentMinder)",
