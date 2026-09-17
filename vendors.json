@@ -5,23 +5,23 @@
     "hq": "Israel (founders from Israeli military background)",
     "funding_stage": "Seed $50M (two rounds)",
     "key_capability": "Firewall for AI agents and AI agent add-ons",
-    "notes": "Emerged from stealth September 1, 2026. Founded February 2026 by Yair Saban and Niv Hoffman. Sequoia Capital led initial $10M round; Greenoaks Capital Partners led subsequent round. Focus on inspecting and blocking malicious instructions in public AI add-ons and AI Skills.",
+    "notes": "Emerged from stealth September 1, 2026. Founded February 2026 by Yair Saban and Niv Hoffman. Sequoia Capital led initial $10M round; Greenoaks Capital Partners led subsequent round. Focus on inspecting and blocking malicious instructions in public AI add-ons and AI Skills. 2026-09 audit (sweep queue; never previously human-reviewed). Set false: llm_firewall. AIR filters inputs entering an agent's context, from skills, MCPs and plugins to websites and internal data, which the placement test excludes in terms: inspection of web content fed to an agent, rather than of LLM prompts and responses, does not qualify. AIR's own Context Firewall branding is what the sweep recorded, not the test. Set true: shadow_ai_discovery, since AIR Control governs the agent fleet with every agent found, sanctioned or shadow; ai_spm, since posture management is AIR's running picture of every agent with configuration drift and misconfigurations becoming findings (Ruling B and the dashboard ruling, and not the provisioned-inventory case ruled out 2026-09-17, since these are agents AIR did not create); ai_governance, since agents are held to policy on configuration, identity and permissions and the runtime layer decides what an agent may do action by action (Ruling D usage-policy limb). Unchanged: prompt_injection_defense true, since AIR Filter analyses add-ons for hidden behaviour, prompt injection and external instruction loading, which is input inspection under the 2026-09-17 attempt ruling, with the single surface allowed by Ruling F; agentic_security true; ai_red_teaming false, since the public scanners analyse add-ons rather than testing AI systems adversarially and Scan your agent is early access (Ruling E); dspm_ai_data_sec false; endpoint_ai_control false, though thinly, since AIR claims coverage across endpoint, cloud and SaaS without describing a local enforcement mechanism; ai_powered_soc_xdr false, since AIR Defend detects and responds on agent actions, which is securing AI. The record clears the evidence floor marginally, on marketplace availability through Google Cloud and AWS rather than named customers or disclosed revenue. All ten flags sourced. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "NEW",
     "last_updated": "2026-09",
-    "verification_needed": true,
+    "verification_needed": false,
     "capabilities": {
-      "llm_firewall": true,
+      "llm_firewall": false,
       "prompt_injection_defense": true,
       "agentic_security": true,
-      "shadow_ai_discovery": false,
-      "ai_spm": false,
+      "shadow_ai_discovery": true,
+      "ai_spm": true,
       "ai_red_teaming": false,
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": false,
-      "ai_governance": false,
+      "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Aim Security",
@@ -77,23 +77,23 @@
     "hq": "San Jose, CA",
     "funding_stage": "Public (CSCO)",
     "key_capability": "Runtime AI protection and validation \u2014 model and application guardrails",
-    "notes": "Cisco acquired Galileo Technologies (closed May 2026) for real-time agentic AI lifecycle visibility integrated into Splunk/AI Defense, and Astrix Security (closed May 2026) for discovery and security of AI agents and non-human identities. WideField Security: acquisition pending (announced 2026-06-18, intent to acquire per Cisco acquisitions page; not closed as of 2026-08) \u2014 identity/session telemetry for Splunk Agentic SOC. Capability booleans not verified this cycle: re-derive from shipped product once WideField closes or hold to AI Defense product scope.",
+    "notes": "Cisco acquired Galileo Technologies (closed May 2026) for real-time agentic AI lifecycle visibility integrated into Splunk/AI Defense, and Astrix Security (closed May 2026) for discovery and security of AI agents and non-human identities. WideField Security: acquisition pending (announced 2026-06-18, intent to acquire per Cisco acquisitions page; not closed as of 2026-08) \u2014 identity/session telemetry for Splunk Agentic SOC. Capability booleans not verified this cycle: re-derive from shipped product once WideField closes or hold to AI Defense product scope. 2026-09 audit (sweep queue; never previously human-reviewed). Set true: shadow_ai_discovery, since AI Cloud Visibility uncovers AI assets including unsanctioned AI workloads and Secure Access AI Access inspects web traffic to identify shadow AI; ai_spm, since AI Cloud Visibility reports the security controls applied to each model and detects misconfigurations and vulnerabilities in AI applications, which is standing state on AI assets rather than agentic SecOps; dspm_ai_data_sec, since AI Runtime stops sensitive data such as PII from reaching the model and scans outputs for sensitive information including data from fine-tuning or RAG databases, so the incumbent generic-DLP caveat is met. Unchanged: llm_firewall and prompt_injection_defense true (inline network-embedded guardrails inspecting every input and blocking malicious payloads, covering prompt injection, prompt extraction and command execution); ai_red_teaming true (AI Validation tests models with algorithmically generated prompts across 200 categories); agentic_security true (AI Supply Chain Risk Management connects to enterprise MCP servers and repositories to identify tool poisoning and data exfiltration); ai_governance true (alignment to NIST, MITRE ATLAS and the OWASP LLM Top 10); ai_powered_soc_xdr true under vendor scope, since Cisco XDR is a detection-and-response platform using agentic AI rather than a copilot bolted to another product; endpoint_ai_control false, since Cisco states it enforces AI security at the network level without agents or libraries, and AI Access is SSE-delivered, which the remote-enforcement rulings exclude. The record clears the evidence floor comfortably: current product pages, a support series page listing AI Defense as available, and a public company with disclosed revenue. All ten flags sourced. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "NEW",
-    "last_updated": "2026-07",
-    "verification_needed": true,
+    "last_updated": "2026-09",
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": true,
       "prompt_injection_defense": true,
       "agentic_security": true,
-      "shadow_ai_discovery": false,
-      "ai_spm": false,
+      "shadow_ai_discovery": true,
+      "ai_spm": true,
       "ai_red_teaming": true,
-      "dspm_ai_data_sec": false,
+      "dspm_ai_data_sec": true,
       "endpoint_ai_control": false,
       "ai_governance": true,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "F5 AI Gateway",
@@ -380,13 +380,13 @@
   {
     "name": "C1",
     "category": "AI Security Posture Mgmt (AI-SPM)",
-    "hq": "Unknown",
-    "funding_stage": "Unknown",
+    "hq": "San Francisco, CA / Portland, OR",
+    "funding_stage": "Private (formerly ConductorOne)",
     "key_capability": "Shadow AI discovery for unauthorized agents and AI-adjacent identities",
-    "notes": "Launched shadow AI discovery feature 2026-07-27, scanning endpoints and cloud/identity environments to detect unapproved AI tools, AI agents, MCP servers, and exposed credentials. Assigns ownership and integrates with existing identity governance workflows. Sources: helpnetsecurity.com 2026-07-27, techzine.eu 2026-07-27.",
+    "notes": "Launched shadow AI discovery feature 2026-07-27, scanning endpoints and cloud/identity environments to detect unapproved AI tools, AI agents, MCP servers, and exposed credentials. Assigns ownership and integrates with existing identity governance workflows. Sources: helpnetsecurity.com 2026-07-27, techzine.eu 2026-07-27. 2026-09 audit (sweep queue; never previously human-reviewed). Identity confirmed: C1 is ConductorOne rebranded. conductorone.com redirects to c1.ai, sign-in still runs on accounts.conductor.one, and the founders (Alex Bovee, Paul Querna) and offices are given on c1.ai/about-us; an alias entry has been added to vendor-aliases.yml so the thin name cannot be mistaken for an unverifiable record. Set true: dspm_ai_data_sec. The MCP Gateway inspects every call in flight so sensitive data such as secrets or customer records never leaves in a response, and runtime guardrails block private-data exfiltration and redact sensitive output (Ruling A, exceeded). Owner ruling 2026-09-17: prompt_injection_defense stays false. Authenticating and scoping MCP tool calls is access control, which prevents an injection from succeeding without ever identifying one, and no detector is named on either page. Unchanged: agentic_security, shadow_ai_discovery, ai_spm (Ruling B: findings on risky agents, MCP servers, tools and exposed secrets) and ai_governance (Ruling D twice over: every agent gets ownership assignment, and approved tools are published in an access catalogue) true; llm_firewall false, since the LLM Gateway is genuinely inline but does routing, cost accounting and provider policy only, failing the detector test; ai_red_teaming and endpoint_ai_control false, the latter because the endpoint component only discovers while enforcement executes at the gateway; ai_powered_soc_xdr false, since an identity governance platform with anomaly detection is not a detection-and-response platform. HQ and funding corrected. The record clears the evidence floor on named customers with case studies. Funding history was not established: no amount is stated on c1.ai and the round history could not be checked without search, so funding_stage records the company status only. All ten flags sourced. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "UPDATED",
-    "last_updated": "2026-08",
-    "verification_needed": true,
+    "last_updated": "2026-09",
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -394,12 +394,12 @@
       "shadow_ai_discovery": true,
       "ai_spm": true,
       "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
+      "dspm_ai_data_sec": true,
       "endpoint_ai_control": false,
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Concentric AI",
@@ -524,10 +524,10 @@
     "hq": "Unknown",
     "funding_stage": "Acquired (Okta)",
     "key_capability": "AI agent and machine identity monitoring post-authentication",
-    "notes": "Acquired by Okta: announced 2026-07-30, completed 2026-08-26 (Okta Form 10-Q for the quarter ended 2026-07-31; Okta press release). Acquisition amount not disclosed: neither Okta's release nor its 10-Q gives one. The ~$200M figure is press-sourced only (TechCrunch, citing an unnamed source). Earlier note, from secondary deal roundups (startuphub.ai, valueaddvc.com), described the close as unconfirmed.",
+    "notes": "Acquired by Okta: announced 2026-07-30, completed 2026-08-26 (Okta Form 10-Q for the quarter ended 2026-07-31; Okta press release). Acquisition amount not disclosed: neither Okta's release nor its 10-Q gives one. The ~$200M figure is press-sourced only (TechCrunch, citing an unnamed source). Earlier note, from secondary deal roundups (startuphub.ai, valueaddvc.com), described the close as unconfirmed. 2026-09 audit (sweep queue; judged on the pre-acquisition product per Policy 5.3, Okta close 2026-08-26; the pages relied on predate that close). Set true: dspm_ai_data_sec. Permiso's own AI exposure catalogue includes a data-exposure category covering sensitive data in training, public or unencrypted AI data, data residency violations and PII access, which is detection without blocking under Ruling A; its DLP integrations flag and prevent sharing of sensitive documents with external AI models, though that mechanism is delivered through third parties, so the flag rests mainly on Permiso's own detections. Unchanged: agentic_security, shadow_ai_discovery (identifying employees using personal unmonitored accounts on public AI services), ai_spm (analysis of AI infrastructure and agents for over-permissioning, weak authentication and configuration vulnerabilities, Ruling B) and ai_governance (framework mapping to both OWASP agentic top tens and MITRE ATLAS, plus discovered ownership for every agent) true; llm_firewall, ai_red_teaming (SandyClaw sandboxes agent skills rather than testing AI adversarially) and endpoint_ai_control (EDR integrations are used for discovery, and kill switches operate at the identity layer) false; prompt_injection_defense false, since prompt injection appears as a posture exposure and LLM hijacking monitoring targets resource abuse rather than injection attempts; ai_powered_soc_xdr false, a close call, since Permiso is a detection-and-response platform but its own pages claim behavioural baselines and a threat-informed engine rather than AI-driven detection, with machine-learning language appearing only on category explainer pages. The record clears the evidence floor on named customers including Autodesk. All ten flags sourced; final under Policy 5.3. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "ACQUIRED/EXITED",
     "last_updated": "2026-09",
-    "verification_needed": true,
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -535,12 +535,12 @@
       "shadow_ai_discovery": true,
       "ai_spm": true,
       "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
+      "dspm_ai_data_sec": true,
       "endpoint_ai_control": false,
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Reco.ai",
@@ -616,13 +616,13 @@
   {
     "name": "Act Security",
     "category": "Agentic AI Security",
-    "hq": "Israel (Tel Aviv, inferred from CTech/Calcalist coverage)",
-    "funding_stage": "Seed/Stealth $60M total",
+    "hq": "Tel Aviv, Israel",
+    "funding_stage": "Seed $20M + Series A $40M ($60M total)",
     "key_capability": "Preventing AI agents from inheriting dangerous cloud permissions",
-    "notes": "Emerged from stealth 2026-07-28 with $60M total funding. Platform described as action-centric cloud security focused on AI agent access path exploitation and dangerous permission inheritance. Investors include YL Ventures, Canaan Partners, and Zeev Ventures per stiennon.substack.com. Sources: startupfortune.com 2026-07-28, calcalistech.com 2026-07-28.",
+    "notes": "Emerged from stealth 2026-07-28 with $60M total funding. Platform described as action-centric cloud security focused on AI agent access path exploitation and dangerous permission inheritance. Investors include YL Ventures, Canaan Partners, and Zeev Ventures per stiennon.substack.com. Sources: startupfortune.com 2026-07-28, calcalistech.com 2026-07-28. 2026-09 audit (sweep queue; never previously human-reviewed). Identity confirmed from Act's own site: Tel Aviv, founded by the Medigate team (Jonathan Langer, Stephan Goldberg, Itay Kirshenbaum, Ilai Fallach), so the HQ no longer needs the inferred qualifier. Set false: ai_governance. Ruling D as narrowed requires AI usage policy, ownership assignment or AI-specific framework mapping, and Act has none: its framework mapping is conventional (NIST 800-53, PCI-DSS, HIPAA), there is no AI inventory and no owner attribution, and its own AI security field guide assigns governance to GRC platforms and the CISO office while placing Act at the infrastructure layer. Ring-fencing agent permissions was considered as an AI usage policy and rejected: that is cloud IAM scoping, already counted under agentic_security, and reading it otherwise would make every permissions product an ai_governance vendor. Unchanged: agentic_security true (agent identity and permissions: Act scopes what agents can do down to what they should do, and ring-fences cloud AI agents so they cannot reach beyond their intended scope) and ai_spm true (Ruling B: excessive-permission posture findings on AI agents from its configured, observed and intended access model); shadow_ai_discovery false (Act maps cloud resources and states it has no agent inventory or prompt inspector); llm_firewall and prompt_injection_defense false (its field guide assigns prompt injection to the model layer and an AI gateway); ai_red_teaming, dspm_ai_data_sec and endpoint_ai_control false, the last because enforcement is cloud-native IAM with no agents to deploy; ai_powered_soc_xdr false, since Act is purely preventive. Record corrections: funding is a $20M seed plus a $40M Series A rather than Seed/Stealth; since this record was written Act acquired Cloud Copilot and launched Amphi, an open-source AWS IAM toolkit (2026-09). The record clears the evidence floor on eleven named customers and live marketplace listings. All ten flags sourced. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "NEW",
-    "last_updated": "2026-08",
-    "verification_needed": true,
+    "last_updated": "2026-09",
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -632,10 +632,10 @@
       "ai_red_teaming": false,
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": false,
-      "ai_governance": true,
+      "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Apex Security",
@@ -1124,23 +1124,23 @@
     "hq": "Austin, TX",
     "funding_stage": "Private",
     "key_capability": "Enterprise DSPM + DLP + data classification for AI data security",
-    "notes": "Acquired Getvisibility (announced 2025-03-10, closed 2025-04-07), adding DSPM capabilities to its data security portfolio. Long-established cybersecurity vendor (formerly Raytheon|Websense); acquired by Francisco Partners in 2021. Government and critical infrastructure business sold to TPG (closed 2023-10-02), renamed Everfox. GenAI Security launched 2024-07-18 (web and CASB controls on GenAI sites, DLP on AI prompts, ChatGPT Enterprise Compliance API). Endpoint agent protecting data sent to AI apps launched 2026-03-04. AI Data Security platform launched 2026-07-22 (AI DLP, inline prompt and response inspection); AIDR, Agentic AI Gateway and shadow AI controls stated as rolling out over the following quarter.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: shadow_ai_discovery (CASB/web controls on GenAI sites since 2024; unsanctioned AI tool detection per forcepoint.com DLP-for-AI page), dspm_ai_data_sec, endpoint_ai_control (2026-03-04 endpoint agent), and ai_governance (EU AI Act and NIST AI RMF compliance exports) set from Forcepoint releases and product pages. agentic_security held false: Agentic AI Gateway announced 2026-07-22 as a rolling release, availability unconfirmed (policy: announced-but-rolling capabilities not flagged) \u2014 re-check. llm_firewall false: inline inspection serves DLP. 'Formerly Raytheon|Websense' not re-sourced this cycle.",
+    "notes": "Acquired Getvisibility (announced 2025-03-10, closed 2025-04-07), adding DSPM capabilities to its data security portfolio. Long-established cybersecurity vendor (formerly Raytheon|Websense); acquired by Francisco Partners in 2021. Government and critical infrastructure business sold to TPG (closed 2023-10-02), renamed Everfox. GenAI Security launched 2024-07-18 (web and CASB controls on GenAI sites, DLP on AI prompts, ChatGPT Enterprise Compliance API). Endpoint agent protecting data sent to AI apps launched 2026-03-04. AI Data Security platform launched 2026-07-22 (AI DLP, inline prompt and response inspection); AIDR, Agentic AI Gateway and shadow AI controls stated as rolling out over the following quarter.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: shadow_ai_discovery (CASB/web controls on GenAI sites since 2024; unsanctioned AI tool detection per forcepoint.com DLP-for-AI page), dspm_ai_data_sec, endpoint_ai_control (2026-03-04 endpoint agent), and ai_governance (EU AI Act and NIST AI RMF compliance exports) set from Forcepoint releases and product pages. agentic_security held false: Agentic AI Gateway announced 2026-07-22 as a rolling release, availability unconfirmed (policy: announced-but-rolling capabilities not flagged) \u2014 re-check. llm_firewall false: inline inspection serves DLP. 'Formerly Raytheon|Websense' not re-sourced this cycle.\n2026-09 audit (sweep queue). Set true: agentic_security, which does not depend on the AI Agent Gateway. The separate AI Security Visibility and Governance capability was outside the rolling-release list in the 2026-07-22 launch and so falls under available today: see every agent running in the environment with full identity attribution, plus pausing agent runs, requiring human approval and revoking access from the console. ai_spm on Ruling B: automatic flagging of over-permissioned agents and agents accessing unsanctioned services. The AI Agent Gateway itself remains unconfirmed under Ruling E: the only availability language is still that the AIDR, agentic AI gateway and shadow AI controls are available on a rolling basis over the next quarter, and Forcepoint publishes no documentation for it, though a live demo at its 2026-09-17 event showed the Gateway blocking a request through an MCP server channel. This resolves the September hold, which was recorded as agentic_security pending GA of the gateway. Owner ruling 2026-09-17: ai_powered_soc_xdr stays false. DLP is not DDR: Forcepoint's DDR detects file activity and its AI-facing detection is DLP-policy inspection, which is policy matching rather than detection. Notes correction: this record previously justified llm_firewall false on the ground that inline inspection serves DLP, which reasons from purpose. The 2026-09-16 placement and detector tests replaced the purpose test; the conclusion stands, because the inline inspection runs only sensitive-data detectors, but the reasoning does not. Unchanged: shadow_ai_discovery, dspm_ai_data_sec, endpoint_ai_control (the Data Security Everywhere agent enforces locally and AI-specifically, with public deployment documentation) and ai_governance (EU AI Act and NIST AI RMF compliance exports) true; llm_firewall, prompt_injection_defense and ai_red_teaming false, the last two because prompt-abuse detection and red teaming are F5's side of the F5 partnership and a partner's capability is not Forcepoint's. All ten flags sourced. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "ACTIVE",
     "last_updated": "2026-09",
-    "verification_needed": true,
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
-      "agentic_security": false,
+      "agentic_security": true,
       "shadow_ai_discovery": true,
-      "ai_spm": false,
+      "ai_spm": true,
       "ai_red_teaming": false,
       "dspm_ai_data_sec": true,
       "endpoint_ai_control": true,
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Securiti",
@@ -1323,23 +1323,23 @@
     "hq": "Unknown",
     "funding_stage": "Unknown",
     "key_capability": "Agentic AI governance and shadow AI data security platform",
-    "notes": "Press release dated 2026-05-05 confirms launch of autonomous agent governance and shadow AI discovery within existing Unified AI & Data Security Platform. Expands from DLP/data security into agentic AI security and shadow AI discovery. Not previously tracked in taxonomy.",
+    "notes": "Press release dated 2026-05-05 confirms launch of autonomous agent governance and shadow AI discovery within existing Unified AI & Data Security Platform. Expands from DLP/data security into agentic AI security and shadow AI discovery. Not previously tracked in taxonomy. 2026-09 audit (sweep queue; never previously human-reviewed). Set true: ai_spm, since AI Risk IQ scores every AI tool and agent across data sensitivity, model integrity, compliance adherence, user access controls and security infrastructure, and MCP server monitoring surfaces risk from integrations outside traditional controls, which is standing state on AI assets (Ruling B and the dashboard ruling). ai_powered_soc_xdr under the owner's DDR ruling as sharpened 2026-09-17: Cyberhaven ships a data detection and response product whose detection engine is AI (Linea AI, built on its Large Lineage Model and shipped in the Winter 2025 launch), and its detection covers AI data flows, connecting every agent action to the data it touched. Unchanged: agentic_security, shadow_ai_discovery, dspm_ai_data_sec, endpoint_ai_control (local enforcement acting on AI use specifically: block, warn and redact across the agentic workflow, plus redirection away from unsanctioned tools) and ai_governance (Ruling D usage-policy limb: applications categorised as sanctioned, unsanctioned, tolerated or restricted) true; llm_firewall false, since enforcement runs in the endpoint agent and browser and the detectors are sensitive-data detectors, so the placement and detector tests assign it to endpoint_ai_control and dspm_ai_data_sec; prompt_injection_defense and ai_red_teaming false. Record correction: the agentic AI security launch release is dated 2026-03-24, not 2026-05-05 as previously noted. The record clears the evidence floor on named customers. All ten flags sourced. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "NEW",
     "last_updated": "2026-09",
-    "verification_needed": true,
+    "verification_needed": false,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
       "agentic_security": true,
       "shadow_ai_discovery": true,
-      "ai_spm": false,
+      "ai_spm": true,
       "ai_red_teaming": false,
       "dspm_ai_data_sec": true,
       "endpoint_ai_control": true,
       "ai_governance": true,
-      "ai_powered_soc_xdr": false
+      "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Ent",
@@ -1582,12 +1582,12 @@
   {
     "name": "Cylake",
     "category": "Multi-Capability Pure Plays",
-    "hq": "Unknown",
-    "funding_stage": "Seed $45M",
+    "hq": "Sunnyvale, CA",
+    "funding_stage": "$290M total ($45M seed 2026-02, $245M convertible note 2026-09)",
     "key_capability": "AI-native cybersecurity platform across detection and response",
-    "notes": "Raised $45M seed round in March 2026. Founded by Nir Zuk, creator of Palo Alto Networks. Described as an AI-native cybersecurity platform; specific capability areas not fully detailed in available sources.",
+    "notes": "Raised $45M seed round in March 2026. Founded by Nir Zuk, creator of Palo Alto Networks. Described as an AI-native cybersecurity platform; specific capability areas not fully detailed in available sources. 2026-09 audit (sweep queue; never previously human-reviewed). Set false: ai_powered_soc_xdr, on Ruling E. Cylake has no shipped product. Its launch release (2026-02-04, $45M seed led by Greylock) says product availability is anticipated in early 2027, and its 2026-09-08 release says a beta product is expected by the end of 2026 with full general availability in 2027; its design-partner programme runs in customer-controlled lab environments at no cost, before commercial launch, with participants unnamed. The positioning, a vertically integrated on-premises AI-native platform spanning endpoint, browser, cloud, SaaS, data, OT and AI with AI-driven investigations, would pass the AI-for-security boundary rule as a detection-and-response platform once it ships. Owner ruling 2026-09-17: this is a pre-product vendor, kept rather than excluded or deleted, since it is neither a scope failure nor an unverifiable record; see capability_assessment. Record corrections in the same change: funding $290M total ($45M seed plus a $245M convertible note in 2026-09 from Lightspeed, Picture Capital and Redpoint), HQ Sunnyvale, launch release dated 2026-02 rather than 2026-03, and co-founders Wilson Xu and Ehud (Udi) Shamir added alongside Nir Zuk. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "NEW",
-    "last_updated": "2026-08",
+    "last_updated": "2026-09",
     "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
@@ -1599,9 +1599,14 @@
       "dspm_ai_data_sec": false,
       "endpoint_ai_control": false,
       "ai_governance": false,
-      "ai_powered_soc_xdr": true
+      "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": false,
+    "capability_assessment": {
+      "status": "pre-product",
+      "all_false_by_design": false,
+      "rationale": "All ten flags are false because nothing ships yet, not because the product maps outside the ten dimensions. Cylake is a real, identifiable company (Sunnyvale, CA; co-founders Nir Zuk, Wilson Xu and Ehud Shamir; $290M raised) building a vertically integrated, sovereign, AI-native security platform spanning endpoint, browser, cloud, SaaS, data, OT and AI. Its own launch release of 2026-02-04 anticipates product availability in early 2027, and its 2026-09-08 release gives a beta by the end of 2026 with full general availability in 2027; design partners run it in their own lab environments at no cost, before commercial launch, and are unnamed. The record therefore fails the evidence floor as a set, and ai_powered_soc_xdr was set false on Ruling E rather than on what the platform will do: the positioning would pass the AI-for-security boundary rule as a detection-and-response platform using AI once it ships. Kept rather than excluded or deleted under the pre-product disposition recorded in docs/capability-definitions.md: this is neither a scope failure nor an unverifiable record. Re-check trigger: general availability, or any earlier statement of shipped capability with a named production customer. Assessed 2026-09-17."
+    }
   },
   {
     "name": "Darktrace",
@@ -1722,26 +1727,26 @@
     "capabilities_verified": true
   },
   {
-    "name": "Broadcom (VMware AgentMinder)",
+    "name": "Broadcom (AgentMinder)",
     "category": "Platform & Ecosystem Plays",
     "hq": "San Jose, CA",
     "funding_stage": "Public (AVGO)",
-    "key_capability": "Agentic AI governance and Zero Trust control for autonomous agents",
-    "notes": "Broadcom launched AgentMinder control plane for governing autonomous AI agents, integrated with VMware vDefend (Zero Trust lateral security) and VMware Avi Load Balancer. Announcement via stocktitan.net (Broadcom press release feed). Canonical vendor name should use parent entity Broadcom; AgentMinder is the product name. Verify official product page for capability depth before full trust.",
+    "key_capability": "AI agent identity and action-level governance (AgentMinder), with GenAI data protection and shadow AI discovery from Symantec",
+    "notes": "AgentMinder is a Broadcom Identity Security product (Symantec/Layer7 Identity Management Suite), not a VMware vDefend product: an agentic security and governance platform giving AI agents identity with mission and intent objects, action-level governance, a protocol-aware gateway including MCP that authenticates tokens and applies per-tool policy, and OpenTelemetry audit. It ships, with a product brief dated 2026-08-18 and public versioned documentation for 4.1 and 4.1.1 covering deploy, upgrade and operate. This record was created by a sweep from a press-release feed and previously described the VMware vDefend and Avi integration as the product; those agentic capabilities (agentic component discovery, Shadow AI Monitoring, Sensitive Data Protection, zero-day attack detection, AI-generated IDPS signatures) are explicitly roadmap - Broadcom states there is no commitment or obligation to deliver any roadmap items - so they support no flag under Ruling E. Restructured 2026-09-17 to describe what the record actually tracks: AgentMinder for agentic_security and ai_governance, and Symantec DLP, Cloud Secure Web Gateway and Endpoint Security Complete for the three flags set under vendor scope. Canonical name uses the parent entity Broadcom; slug renamed from broadcom-vmware-agentminder. 2026-09 audit (sweep queue; never previously human-reviewed). Set true, all three under vendor scope, which counts a capability shipped by any part of the vendor: shadow_ai_discovery, since Symantec DLP's generative AI data protection shows which AI apps are being used and by whom with a business readiness rating, and Cloud Secure Web Gateway eliminates blind spots like shadow AI; dspm_ai_data_sec, since the same DLP enables safe use of GenAI through real-time granular inspection of submitted data, blocking or remediating sensitive information (Ruling A exceeded); ai_powered_soc_xdr, since Symantec Endpoint Security Complete delivers AI-guided security management and Threat Hunter combines telemetry with machine-learning analytics to expose attacks that would otherwise evade detection, which is a detection-and-response platform using AI rather than a consulting engagement. Owner ruling 2026-09-17: ai_spm stays false. AgentMinder's agent registry and Security and Risk dashboard report the standing state of agents AgentMinder itself provisioned, which is its own inventory rather than an assessment of an estate; posture means assessing what the product did not provision. Unchanged: agentic_security and ai_governance true, both on AgentMinder, which ships with public versioned documentation for 4.1.1: agent identity with mission and intent objects, action-level governance, a protocol-aware gateway including MCP that authenticates tokens and applies per-tool policy, plus a compliance mapping of EU AI Act articles 9, 12, 13 and 14 and NIST SP 800-207 to AgentMinder controls. llm_firewall false: the gateway satisfies placement but authorises tool calls against identity, resource and declared intent, running no prompt or response detectors. prompt_injection_defense false: AgentMinder infers injection from consequences, noting that a sudden deny-rate spike is likely caused by prompt injection driving an agent to probe out-of-scope tools, which is behavioural detection of a hijacked agent and excluded by the 2026-09-17 ruling. ai_red_teaming false. endpoint_ai_control is unverifiable: Symantec DLP monitors or blocks GenAI activity in real time with telemetry on user, device and browser, but no readable page says whether that blocking executes locally through Endpoint Prevent or remotely at CloudSOC or Cloud SWG, which is the difference between the enforcement-delivery ruling and the remote-enforcement exclusions. The record is therefore left unverified. Audit evidence is vendor pages only: WebSearch was exhausted, so no finding carries trade-press corroboration.",
     "status": "NEW",
-    "last_updated": "2026-08",
+    "last_updated": "2026-09",
     "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
       "agentic_security": true,
-      "shadow_ai_discovery": false,
+      "shadow_ai_discovery": true,
       "ai_spm": false,
       "ai_red_teaming": false,
-      "dspm_ai_data_sec": false,
+      "dspm_ai_data_sec": true,
       "endpoint_ai_control": false,
       "ai_governance": true,
-      "ai_powered_soc_xdr": false
+      "ai_powered_soc_xdr": true
     },
     "capabilities_verified": false
   },
