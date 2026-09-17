@@ -1340,7 +1340,7 @@
     "hq": null,
     "funding_stage": "Seed $3M",
     "key_capability": "AI-native Digital Forensics and Incident Response (DFIR) platform",
-    "notes": "Emerged from stealth with $3M seed funding and launched a patent-pending AI-native Digital Forensics and Incident Response (DFIR) platform, representing a distinct productised capability not previously disclosed 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
+    "notes": "Emerged from stealth with $3M seed funding and launched a patent-pending AI-native Digital Forensics and Incident Response (DFIR) platform, representing a distinct productised capability not previously disclosed . 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "UPDATED",
     "last_updated": "2026-04",
     "verification_needed": true,
