@@ -29,7 +29,7 @@
     "hq": "Tel Aviv, Israel",
     "funding_stage": "Acquired (Cato Networks)",
     "key_capability": "AI usage governance, shadow AI discovery, and LLM gateway security",
-    "notes": "Acquired by Cato Networks, announced and completed 2025-09-03 (Cato Networks press release; SecurityWeek and Calcalist, 2025-09-03). Aim Security had raised ~$28M from YL Ventures and Canaan Partners.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: flags reflect the pre-acquisition product per Policy 5.3, sourced from Wayback Machine captures of aim.security dated 2025-07-31 to 2025-08-05 \u2014 AI Firewall / AI Gateway (inline guardrails), Aim Guards (prompt attack and context injection detection), AI Agents (shadow agent discovery, MCP/A2A, tool-use controls), Aim for End Users (shadow AI discovery, prompt DLP, browser extension), AI-SPM (AI asset inventory, model scanner, AI red teaming, EU AI Act / ISO 42001 / NIST AI RMF testing). No earlier flag values existed in git history or the legacy sheet to restore. ai_powered_soc_xdr false \u2014 SIEM export only. Earlier note cited CRN; no CRN article found.",
+    "notes": "Acquired by Cato Networks, announced and completed 2025-09-03 (Cato Networks press release; SecurityWeek and Calcalist, 2025-09-03). Aim Security had raised ~$28M from YL Ventures and Canaan Partners.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: flags reflect the pre-acquisition product per Policy 5.3, sourced from Wayback Machine captures of aim.security dated 2025-07-31 to 2025-08-05 \u2014 AI Firewall / AI Gateway (inline guardrails), Aim Guards (prompt attack and context injection detection), AI Agents (shadow agent discovery, MCP/A2A, tool-use controls), Aim for End Users (shadow AI discovery, prompt DLP, browser extension), AI-SPM (AI asset inventory, model scanner, AI red teaming, EU AI Act / ISO 42001 / NIST AI RMF testing). No earlier flag values existed in git history or the legacy sheet to restore. ai_powered_soc_xdr false \u2014 SIEM export only. Earlier note cited CRN; no CRN article found.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "ACQUIRED/EXITED",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -45,7 +45,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Calypso AI",
@@ -517,7 +517,7 @@
     "hq": "Austin, TX",
     "funding_stage": "Series A $22.5M (~$30M total)",
     "key_capability": "Shadow AI discovery, AI agent inventory and governance, MCP server connection detection",
-    "notes": "SaaS and AI security governance platform. $22.5M Series A 2025-11-18 led by Cerberus Ventures (Ballistic Ventures, Forgepoint Capital, Squadra Ventures), ~$30M total. AI security governance launch 2025-12-09: shadow AI discovery, AI Conversation Monitoring (sensitive data in prompts and uploads to ChatGPT, Gemini, Copilot, Perplexity), AI acceptable-use policy delivery via browser extension. AI agent discovery GA 2026-03-24: agent inventory across Copilot Studio, Agentforce, ServiceNow, n8n and others; findings for public access, hardcoded credentials, unauthenticated MCP, orphaned agents; remote MCP server connection detection. Browser-based shadow AI agent discovery launched 2026-05-27 as research preview. OAuth Grant Risk Analyst and Browser Extension Risk Analyst AI agents launched 2026-07-15 to select customers (PR Newswire).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: agentic_security, shadow_ai_discovery and ai_governance confirmed. ai_spm rests on AI agent misconfiguration findings and AI-vendor OAuth grant risk, not AI-service config posture (policy: agent posture counts as ai_spm). dspm_ai_data_sec added: sensitive-data detection in AI prompts, without blocking (policy: detect-only counts). endpoint_ai_control false: browser extension delivers policy guidance but does not block (policy: guidance-only does not count). Earlier note attributed browser-based agent discovery to the 2026-07 release; it was 2026-05-27.",
+    "notes": "SaaS and AI security governance platform. $22.5M Series A 2025-11-18 led by Cerberus Ventures (Ballistic Ventures, Forgepoint Capital, Squadra Ventures), ~$30M total. AI security governance launch 2025-12-09: shadow AI discovery, AI Conversation Monitoring (sensitive data in prompts and uploads to ChatGPT, Gemini, Copilot, Perplexity), AI acceptable-use policy delivery via browser extension. AI agent discovery GA 2026-03-24: agent inventory across Copilot Studio, Agentforce, ServiceNow, n8n and others; findings for public access, hardcoded credentials, unauthenticated MCP, orphaned agents; remote MCP server connection detection. Browser-based shadow AI agent discovery launched 2026-05-27 as research preview. OAuth Grant Risk Analyst and Browser Extension Risk Analyst AI agents launched 2026-07-15 to select customers (PR Newswire).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: agentic_security, shadow_ai_discovery and ai_governance confirmed. ai_spm rests on AI agent misconfiguration findings and AI-vendor OAuth grant risk, not AI-service config posture (policy: agent posture counts as ai_spm). dspm_ai_data_sec added: sensitive-data detection in AI prompts, without blocking (policy: detect-only counts). endpoint_ai_control false: browser extension delivers policy guidance but does not block (policy: guidance-only does not count). Earlier note attributed browser-based agent discovery to the 2026-07 release; it was 2026-05-27.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "UPDATED",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -533,7 +533,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Obsidian Security",
@@ -1387,7 +1387,7 @@
     "hq": "Seattle, WA",
     "funding_stage": "Pre-seed $4.2M",
     "key_capability": "Endpoint security layer for AI agents",
-    "notes": "Emerged from stealth 2026-03-16 with $4.2M pre-seed (Aviso Ventures, Founders' Co-op, Fortson) and launched an endpoint security layer for AI agents: an endpoint agent (Windows, macOS, Linux, containers) that inventories agents, models, tools and MCP servers and authorizes or blocks tool calls before execution (PR Newswire). Founded by Jason Needham (CEO), Paul Allen (CTO), and Dan Morris (Chief AI Officer).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: flags set from the 2026-03-16 release and certiv.ai product page. prompt_injection_defense rests on behavioral detection of agents acting on injected instructions, not prompt content inspection (policy: scope-limited protection counts, limit noted). ai_governance: inventory of agents, tools and models paired with policy-as-code governance and rules mapped to the OWASP Top 10 for Agentic Applications, plus audit-ready compliance evidence (Ruling D as narrowed 2026-09-16); no EU AI Act or NIST AI RMF mapping. dspm_ai_data_sec false \u2014 credential-exfiltration detection is threat detection, not AI data protection. Earlier record said seed; release says pre-seed.",
+    "notes": "Emerged from stealth 2026-03-16 with $4.2M pre-seed (Aviso Ventures, Founders' Co-op, Fortson) and launched an endpoint security layer for AI agents: an endpoint agent (Windows, macOS, Linux, containers) that inventories agents, models, tools and MCP servers and authorizes or blocks tool calls before execution (PR Newswire). Founded by Jason Needham (CEO), Paul Allen (CTO), and Dan Morris (Chief AI Officer).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: flags set from the 2026-03-16 release and certiv.ai product page. prompt_injection_defense rests on behavioral detection of agents acting on injected instructions, not prompt content inspection (policy: scope-limited protection counts, limit noted). ai_governance: inventory of agents, tools and models paired with policy-as-code governance and rules mapped to the OWASP Top 10 for Agentic Applications, plus audit-ready compliance evidence (Ruling D as narrowed 2026-09-16); no EU AI Act or NIST AI RMF mapping. dspm_ai_data_sec false \u2014 credential-exfiltration detection is threat detection, not AI data protection. Earlier record said seed; release says pre-seed.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "UPDATED",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -1403,7 +1403,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Ciphero",
@@ -1558,7 +1558,7 @@
     "hq": "Tel Aviv, Israel",
     "funding_stage": "Acquired (Akamai Technologies, ~$205M)",
     "key_capability": "AI-powered enterprise browser security with shadow AI discovery and data-loss prevention for GenAI usage",
-    "notes": "Acquired by Akamai Technologies: agreement announced 2026-05-14, completed 2026-07-02 at approximately US$205M (Akamai press releases). Product relaunched as Akamai Workforce Protector (formerly LayerX) 2026-08-05. Enterprise browser extension (Chrome, Edge, Firefox, Safari) plus endpoint agent for desktop AI apps: shadow AI discovery, GenAI DLP on typed text, paste and uploads (monitor, warn, block), AI usage policies. Agentic AI browser protection launched 2026-02-19: prompt injection detection and blocking, separation of AI-agent from human activity, policies on agent actions. Was on the adjacent-incumbent watchlist. Acquirer (Akamai) is not a tracked vendor.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: shadow_ai_discovery, endpoint_ai_control and ai_governance confirmed. dspm_ai_data_sec added (GenAI DLP). prompt_injection_defense and agentic_security added; coverage limited to agentic AI browsers and embedded assistants, no agent identity or MCP coverage (policy: scope-limited protection counts, limit noted). Flags retained per Policy 5.3. Earlier ~$250M figure was Calcalist's pre-signing report, superseded by Akamai's disclosed ~$205M. Close was not picked up by weekly sweeps 2026-07 through 2026-09.",
+    "notes": "Acquired by Akamai Technologies: agreement announced 2026-05-14, completed 2026-07-02 at approximately US$205M (Akamai press releases). Product relaunched as Akamai Workforce Protector (formerly LayerX) 2026-08-05. Enterprise browser extension (Chrome, Edge, Firefox, Safari) plus endpoint agent for desktop AI apps: shadow AI discovery, GenAI DLP on typed text, paste and uploads (monitor, warn, block), AI usage policies. Agentic AI browser protection launched 2026-02-19: prompt injection detection and blocking, separation of AI-agent from human activity, policies on agent actions. Was on the adjacent-incumbent watchlist. Acquirer (Akamai) is not a tracked vendor.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: shadow_ai_discovery, endpoint_ai_control and ai_governance confirmed. dspm_ai_data_sec added (GenAI DLP). prompt_injection_defense and agentic_security added; coverage limited to agentic AI browsers and embedded assistants, no agent identity or MCP coverage (policy: scope-limited protection counts, limit noted). Flags retained per Policy 5.3. Earlier ~$250M figure was Calcalist's pre-signing report, superseded by Akamai's disclosed ~$205M. Close was not picked up by weekly sweeps 2026-07 through 2026-09.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "ACQUIRED/EXITED",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -1574,7 +1574,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Lumia Security",
@@ -1605,7 +1605,7 @@
     "hq": "Mountain View, CA",
     "funding_stage": "Private (Series E $100M 2020; ~$250M total)",
     "key_capability": "Browser-delivered GenAI and AI-agent governance \u2014 shadow AI discovery, browser DLP, and policy enforcement for human and agent AI use",
-    "notes": "Browser-security incumbent (secure enterprise browser / remote browser isolation heritage) that pivoted into AI security, delivering GenAI controls at the browser layer: shadow AI discovery and real-time visibility, browser DLP that blocks risky uploads and prompt entries, and guidance toward sanctioned tools. Launched a Browser Security Platform to govern AI agents \u2014 human and non-human \u2014 on 2026-03-18 (Menlo AI Agent Security / Menlo Agent Runtime Security, MARS), adding instruction-data separation against indirect prompt injection, least-privileged agent access, and forensic visibility. Acquired Votiro (2025-02-19) for content disarm and reconstruction and AI-driven data security. Bill Robbins appointed CEO 2026-02-25. Last primary-sourced round: $100M Series E led by Vista Equity Partners (2020-11-12); ~$250M total per SiliconANGLE.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: all flags confirmed against menlosecurity.com GenAI solution and AI agent security pages and the 2026-03-18 release. prompt_injection_defense and agentic_security cover browser-based agents only; no agent discovery claimed; GA status not stated in the release (policy: scope-limited protection counts, limit noted). ai_governance: GenAI usage policy (defining which GenAI tools are allowed, with enforcement and redirection to sanctioned tools) plus visibility into shadow AI use; no framework mapping. Qualifies under Ruling D as narrowed 2026-09-16, which restricts inventory alone and leaves usage policy qualifying on its own.",
+    "notes": "Browser-security incumbent (secure enterprise browser / remote browser isolation heritage) that pivoted into AI security, delivering GenAI controls at the browser layer: shadow AI discovery and real-time visibility, browser DLP that blocks risky uploads and prompt entries, and guidance toward sanctioned tools. Launched a Browser Security Platform to govern AI agents \u2014 human and non-human \u2014 on 2026-03-18 (Menlo AI Agent Security / Menlo Agent Runtime Security, MARS), adding instruction-data separation against indirect prompt injection, least-privileged agent access, and forensic visibility. Acquired Votiro (2025-02-19) for content disarm and reconstruction and AI-driven data security. Bill Robbins appointed CEO 2026-02-25. Last primary-sourced round: $100M Series E led by Vista Equity Partners (2020-11-12); ~$250M total per SiliconANGLE.\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: all flags confirmed against menlosecurity.com GenAI solution and AI agent security pages and the 2026-03-18 release. prompt_injection_defense and agentic_security cover browser-based agents only; no agent discovery claimed; GA status not stated in the release (policy: scope-limited protection counts, limit noted). ai_governance: GenAI usage policy (defining which GenAI tools are allowed, with enforcement and redirection to sanctioned tools) plus visibility into shadow AI use; no framework mapping. Qualifies under Ruling D as narrowed 2026-09-16, which restricts inventory alone and leaves usage policy qualifying on its own.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "ACTIVE",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -1621,7 +1621,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Portal26",
@@ -1769,7 +1769,7 @@
     "hq": "San Francisco, CA",
     "funding_stage": "Series B $125M ($200M total)",
     "key_capability": "AI-native threat detection and response; AI-powered SOC/XDR automation",
-    "notes": "Series B of $125M announced 2026-05-12 (Exaforce release; TechCrunch), one year after $75M Series A. Total funding $200M. Agentic SOC and MDR platform: AI agents for detection, triage, investigation and response. Claude Compliance API integration 2026-06-12 (sensitive-data labeling in Claude Enterprise chats, threat detection from audit events). Exaforce AI Security generally available 2026-09-15: agentless discovery of AI apps, coding agents, custom GPTs, MCP servers, skills and plugins; per-agent risk scoring; detection correlating agent activity with identity, endpoint, cloud and code telemetry; response via existing EDR, identity and model-provider controls; AI usage policies. No gateway, browser extension or endpoint agent of its own (SiliconANGLE, CSO Online, 2026-09-15).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: ai_powered_soc_xdr confirmed. agentic_security, shadow_ai_discovery and ai_governance added from the 2026-09-15 AI Security launch. ai_spm rests on agent, skill and MCP server risk scoring (policy: agent posture counts as ai_spm). dspm_ai_data_sec rests on API-based sensitive-data alerts in AI chats, no inline blocking (policy: detect-only counts). endpoint_ai_control false \u2014 endpoint actions go through the customer's EDR. prompt_injection_defense false \u2014 single mention on a marketing page, no described mechanism. Primary Business Wire release not retrievable; launch facts from SiliconANGLE, CSO Online and exaforce.com.",
+    "notes": "Series B of $125M announced 2026-05-12 (Exaforce release; TechCrunch), one year after $75M Series A. Total funding $200M. Agentic SOC and MDR platform: AI agents for detection, triage, investigation and response. Claude Compliance API integration 2026-06-12 (sensitive-data labeling in Claude Enterprise chats, threat detection from audit events). Exaforce AI Security generally available 2026-09-15: agentless discovery of AI apps, coding agents, custom GPTs, MCP servers, skills and plugins; per-agent risk scoring; detection correlating agent activity with identity, endpoint, cloud and code telemetry; response via existing EDR, identity and model-provider controls; AI usage policies. No gateway, browser extension or endpoint agent of its own (SiliconANGLE, CSO Online, 2026-09-15).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: ai_powered_soc_xdr confirmed. agentic_security, shadow_ai_discovery and ai_governance added from the 2026-09-15 AI Security launch. ai_spm rests on agent, skill and MCP server risk scoring (policy: agent posture counts as ai_spm). dspm_ai_data_sec rests on API-based sensitive-data alerts in AI chats, no inline blocking (policy: detect-only counts). endpoint_ai_control false \u2014 endpoint actions go through the customer's EDR. prompt_injection_defense false \u2014 single mention on a marketing page, no described mechanism. Primary Business Wire release not retrievable; launch facts from SiliconANGLE, CSO Online and exaforce.com.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "UPDATED",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -1785,7 +1785,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Onyx AI",
@@ -1816,7 +1816,7 @@
     "hq": "Palo Alto, CA",
     "funding_stage": "Seed, $10M",
     "key_capability": "Unified AI control plane \u2014 shadow AI discovery, agent and MCP governance, runtime protection, AI red teaming, AI compliance evidence",
-    "notes": "Founded by Shiv Agarwal and Abhijit Sharma (ex-Arkin Net, acquired by VMware 2016); $10M seed backed by Nexus Venture Partners and Dell Technologies Capital (Feb 2025). Launched unified AI control plane 2025-07-30: AI discovery, application-aware AI red teaming, runtime protection against prompt injection and PII/PHI leakage. Launched Agent Pulse 2026-03-09: AI agent and MCP server discovery, agent risk posture, runtime controls on tool access. Extended 2026-07-29 to endpoint agents (endpoint sensor and browser extension), AI gateways (LiteLLM), and homegrown agents via SDK (Business Wire).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: flags set from Singulr releases (2025-07-30, 2026-03-09, 2026-07-29) and product pages. ai_spm rests on agent/MCP risk posture and model vulnerability alerts, not AI-service config scanning (policy: agent posture counts as ai_spm). ai_governance: EU AI Act and NIST AI RMF evidence generation. ai_powered_soc_xdr false \u2014 SIEM/XDR integration only. Category moved from AI Red Teaming & Testing: red teaming is one module of a governance and runtime platform.",
+    "notes": "Founded by Shiv Agarwal and Abhijit Sharma (ex-Arkin Net, acquired by VMware 2016); $10M seed backed by Nexus Venture Partners and Dell Technologies Capital (Feb 2025). Launched unified AI control plane 2025-07-30: AI discovery, application-aware AI red teaming, runtime protection against prompt injection and PII/PHI leakage. Launched Agent Pulse 2026-03-09: AI agent and MCP server discovery, agent risk posture, runtime controls on tool access. Extended 2026-07-29 to endpoint agents (endpoint sensor and browser extension), AI gateways (LiteLLM), and homegrown agents via SDK (Business Wire).\n2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.\n2026-09 verification: flags set from Singulr releases (2025-07-30, 2026-03-09, 2026-07-29) and product pages. ai_spm rests on agent/MCP risk posture and model vulnerability alerts, not AI-service config scanning (policy: agent posture counts as ai_spm). ai_governance: EU AI Act and NIST AI RMF evidence generation. ai_powered_soc_xdr false \u2014 SIEM/XDR integration only. Category moved from AI Red Teaming & Testing: red teaming is one module of a governance and runtime platform.\n2026-09: capabilities verified against docs/capability-definitions.md.",
     "status": "ACTIVE",
     "last_updated": "2026-09",
     "verification_needed": false,
@@ -1832,7 +1832,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": true
   },
   {
     "name": "Vectra AI",
