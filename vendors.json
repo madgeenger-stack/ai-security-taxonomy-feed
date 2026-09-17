@@ -29,9 +29,10 @@
     "hq": "Israel",
     "funding_stage": "Acquired (Cato Networks)",
     "key_capability": "AI usage governance, shadow AI discovery, and LLM gateway security",
-    "notes": "Acquired by Cato Networks. Deal confirmed by CRN. Aim Security had raised ~$28M from YL Ventures and Canaan Partners.",
+    "notes": "Acquired by Cato Networks. Deal confirmed by CRN. Aim Security had raised ~$28M from YL Ventures and Canaan Partners. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "ACQUIRED/EXITED",
     "last_updated": "2026-06",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -44,7 +45,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Calypso AI",
@@ -237,10 +238,10 @@
     "category": "AI Red Teaming & Testing",
     "funding_stage": "Seed $2.3M",
     "key_capability": "AI-driven vulnerability management and threat prioritization",
-    "notes": "Emerged from stealth per SecurityWeek. Focuses on attacker-perspective vulnerability management with AI-native threat prioritization. Early stage; monitor for additional primary source confirmation.",
+    "notes": "Emerged from stealth per SecurityWeek. Focuses on attacker-perspective vulnerability management with AI-native threat prioritization. Early stage; monitor for additional primary source confirmation. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "NEW",
     "last_updated": "2026-06",
-    "verification_needed": false,
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -253,7 +254,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Cranium",
@@ -376,9 +377,10 @@
     "hq": "Palo Alto, CA",
     "funding_stage": "Seed, $10M",
     "key_capability": "Enterprise AI governance and security \u2014 shadow AI discovery, application-aware AI red teaming, runtime protection",
-    "notes": "Founded by Shiv Agarwal and Abhijit Sharma (ex-Arkin Net, acquired by VMware 2016); $10M seed backed by Nexus Venture Partners and Dell Technologies Capital (Feb 2025). Launched unified AI control plane July 2025.",
+    "notes": "Founded by Shiv Agarwal and Abhijit Sharma (ex-Arkin Net, acquired by VMware 2016); $10M seed backed by Nexus Venture Partners and Dell Technologies Capital (Feb 2025). Launched unified AI control plane July 2025. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "ACTIVE",
     "last_updated": "2026-05",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -391,7 +393,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "TrojAI",
@@ -538,10 +540,10 @@
     "category": "AI Security Posture Mgmt (AI-SPM)",
     "funding_stage": "Unknown",
     "key_capability": "Shadow AI discovery, AI agent inventory and governance, MCP server connection detection",
-    "notes": "Press release (prnewswire, 2026-07) confirms launch of browser-based shadow AI agent discovery, covering hidden OAuth grants and browser extensions. Positions product as SaaS and AI security governance platform with agent discovery.",
+    "notes": "Press release (prnewswire, 2026-07) confirms launch of browser-based shadow AI agent discovery, covering hidden OAuth grants and browser extensions. Positions product as SaaS and AI security governance platform with agent discovery. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "UPDATED",
     "last_updated": "2026-07",
-    "verification_needed": false,
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -554,7 +556,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Obsidian Security",
@@ -608,9 +610,10 @@
     "hq": null,
     "funding_stage": "Seed $36M",
     "key_capability": "AI-driven identity and application security posture management",
-    "notes": "Emerged from stealth led by Team8 and Intel Capital",
+    "notes": "Emerged from stealth led by Team8 and Intel Capital 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "NEW",
     "last_updated": "2026-05",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -623,7 +626,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Permiso Security",
@@ -1244,9 +1247,10 @@
     "hq": "Austin, TX",
     "funding_stage": "Private",
     "key_capability": "Enterprise DSPM + DLP + data classification for AI data security",
-    "notes": "Acquired Getvisibility in March 2025, adding DSPM capabilities to its data security portfolio. Long-established cybersecurity vendor (formerly Raytheon|Websense); acquired by Francisco Partners in 2021.",
+    "notes": "Acquired Getvisibility in March 2025, adding DSPM capabilities to its data security portfolio. Long-established cybersecurity vendor (formerly Raytheon|Websense); acquired by Francisco Partners in 2021. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "ACTIVE",
     "last_updated": "2026-05",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1259,7 +1263,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Securiti",
@@ -1336,9 +1340,10 @@
     "hq": null,
     "funding_stage": "Seed $3M",
     "key_capability": "AI-native Digital Forensics and Incident Response (DFIR) platform",
-    "notes": "Emerged from stealth with $3M seed funding and launched a patent-pending AI-native Digital Forensics and Incident Response (DFIR) platform, representing a distinct productised capability not previously disclosed",
+    "notes": "Emerged from stealth with $3M seed funding and launched a patent-pending AI-native Digital Forensics and Incident Response (DFIR) platform, representing a distinct productised capability not previously disclosed 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "UPDATED",
     "last_updated": "2026-04",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1351,7 +1356,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Apex",
@@ -1405,9 +1410,10 @@
     "hq": "Seattle, WA",
     "funding_stage": "Seed $4.2M",
     "key_capability": "Endpoint security layer for AI agents",
-    "notes": "Formally emerged from stealth with $4.2M seed funding and launched a commercial endpoint security layer specifically for AI agents, providing runtime monitoring and policy enforcement at the agent execution layer",
+    "notes": "Formally emerged from stealth with $4.2M seed funding and launched a commercial endpoint security layer specifically for AI agents, providing runtime monitoring and policy enforcement at the agent execution layer 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "UPDATED",
     "last_updated": "2026-04",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1420,7 +1426,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Ciphero",
@@ -1575,7 +1581,7 @@
     "hq": "Tel Aviv, Israel",
     "funding_stage": "Acquisition pending (Akamai, ~$205\u2013250M reported, not closed; expected close Q3 2026)",
     "key_capability": "AI-powered enterprise browser security with shadow AI discovery and data-loss prevention for GenAI usage",
-    "notes": "Akamai/LayerX acquisition reported but NOT closed. SecurityWeek (June 2026) reported an agreement at ~$205M all-cash; Calcalist (Ctech, June 2026) reports advanced negotiations at ~$250M \u2014 sources disagree on price. Status stays NEW (deal pending) until close is confirmed; do not mark ACQUIRED/EXITED for an unclosed deal. LayerX specializes in enterprise browser security with AI controls (shadow AI discovery, GenAI DLP). Was on the adjacent-incumbent watchlist. Acquirer (Akamai) is not a tracked vendor.",
+    "notes": "Akamai/LayerX acquisition reported but NOT closed. SecurityWeek (June 2026) reported an agreement at ~$205M all-cash; Calcalist (Ctech, June 2026) reports advanced negotiations at ~$250M \u2014 sources disagree on price. Status stays NEW (deal pending) until close is confirmed; do not mark ACQUIRED/EXITED for an unclosed deal. LayerX specializes in enterprise browser security with AI controls (shadow AI discovery, GenAI DLP). Was on the adjacent-incumbent watchlist. Acquirer (Akamai) is not a tracked vendor. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "NEW",
     "last_updated": "2026-06",
     "verification_needed": true,
@@ -1591,7 +1597,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Lumia Security",
@@ -1622,10 +1628,10 @@
     "hq": "Mountain View, CA",
     "funding_stage": "Private (late-stage)",
     "key_capability": "Browser-delivered GenAI and AI-agent governance \u2014 shadow AI discovery, browser DLP, and policy enforcement for human and agent AI use",
-    "notes": "Browser-security incumbent (secure enterprise browser / remote browser isolation heritage) that pivoted into AI security, delivering GenAI controls at the browser layer: shadow AI discovery and real-time visibility, browser DLP that blocks risky uploads and prompt entries, and guidance toward sanctioned tools. Launched a Browser Security Platform to govern AI agents \u2014 human and non-human \u2014 in March 2026, adding agent-level prompt-injection prevention and forensic visibility. Acquired Votiro for content disarm and reconstruction and AI-driven data security.",
+    "notes": "Browser-security incumbent (secure enterprise browser / remote browser isolation heritage) that pivoted into AI security, delivering GenAI controls at the browser layer: shadow AI discovery and real-time visibility, browser DLP that blocks risky uploads and prompt entries, and guidance toward sanctioned tools. Launched a Browser Security Platform to govern AI agents \u2014 human and non-human \u2014 in March 2026, adding agent-level prompt-injection prevention and forensic visibility. Acquired Votiro for content disarm and reconstruction and AI-driven data security. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "NEW",
     "last_updated": "2026-06",
-    "verification_needed": false,
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": true,
@@ -1638,7 +1644,7 @@
       "ai_governance": true,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Portal26",
@@ -1715,9 +1721,10 @@
     "hq": "La Jolla, CA",
     "funding_stage": "Acquired",
     "key_capability": "AI-driven EDR/XDR with managed detection and response",
-    "notes": "Acquired (LevelBlue, Oct 2025)",
+    "notes": "Acquired (LevelBlue, Oct 2025) 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "ACQUIRED/EXITED",
     "last_updated": "2026-05",
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1730,7 +1737,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Cylake",
@@ -1784,10 +1791,10 @@
     "category": "Multi-Capability Pure Plays",
     "funding_stage": "Series B $125M ($200M total)",
     "key_capability": "AI-native threat detection and response; AI-powered SOC/XDR automation",
-    "notes": "Series B of $125M announced May 2026 (TechCrunch), one year after $75M Series A. Total funding $200M. Focus on AI-driven real-time cyberattack detection and response.",
+    "notes": "Series B of $125M announced May 2026 (TechCrunch), one year after $75M Series A. Total funding $200M. Focus on AI-driven real-time cyberattack detection and response. 2026-09: capabilities_verified demoted \u2014 flag set by bulk commit 479bd6f5 without per-vendor verification; re-queued.",
     "status": "UPDATED",
     "last_updated": "2026-06",
-    "verification_needed": false,
+    "verification_needed": true,
     "capabilities": {
       "llm_firewall": false,
       "prompt_injection_defense": false,
@@ -1800,7 +1807,7 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": true
     },
-    "capabilities_verified": true
+    "capabilities_verified": false
   },
   {
     "name": "Onyx AI",
