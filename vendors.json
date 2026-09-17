@@ -987,7 +987,12 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": false,
+    "capability_assessment": {
+      "status": "incomplete",
+      "all_false_by_design": false,
+      "rationale": "Incomplete, not assessed-empty: all ten flags are false, but the assessment is unfinished. Pensar sells continuous AI pentesting of applications and AI agents. The 2026-09 audit removed shadow_ai_discovery, ai_spm and ai_governance as unsupported on pensar.dev and docs.pensar.dev. agentic_security was ruled false 2026-09-17: adversarially testing MCP servers is red teaming, not MCP security. ai_red_teaming is unresolved: agent red teaming was live by 2026-06-15 (Console V2 post), but its launch date is not established, so the flag stays false pending that date. llm_firewall, prompt_injection_defense, dspm_ai_data_sec, endpoint_ai_control and ai_powered_soc_xdr have no supporting evidence: Pensar tests for injection weaknesses but does not detect or block live attacks, and AI pentesting is not SOC work."
+    }
   },
   {
     "name": "Runlayer",
@@ -1387,7 +1392,12 @@
       "ai_governance": false,
       "ai_powered_soc_xdr": false
     },
-    "capabilities_verified": false
+    "capabilities_verified": false,
+    "capability_assessment": {
+      "status": "incomplete",
+      "all_false_by_design": false,
+      "rationale": "Incomplete, not assessed-empty: all ten flags are false, but the assessment is unfinished. Ciphero's only shipped product is Orpheus, an endpoint agent that secures coding agents (Claude Code, Codex, Cursor). The 2026-09 audit removed shadow_ai_discovery: the discovery product is listed as a stealth release coming soon, which Ruling E excludes. prompt_injection_defense, agentic_security, dspm_ai_data_sec, endpoint_ai_control and ai_governance are described on the Orpheus product page but stay false pending an established ship date for Orpheus. ai_powered_soc_xdr was ruled false 2026-09-17: an AI analyst feature inside a product that secures AI is not an AI-for-security product. llm_firewall, ai_spm and ai_red_teaming have no supporting evidence: Orpheus runs on the endpoint rather than in the LLM request path, and no posture findings or red teaming are described."
+    }
   },
   {
     "name": "Confident Security",
